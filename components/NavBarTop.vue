@@ -1,0 +1,117 @@
+<template>
+  <div
+    class="sticky md:absolute bg-gray-300 md:bg-transparent left-0 top-0 right-0 bottom-auto z-10 md:h-36 h-12 sm:h-16"
+  >
+    <div class="flex flex-row text-secondary h-full">
+      <!-- column 1 -->
+      <div class="flex-auto w-1/4">
+        <!-- Element shown based on screen size -->
+        <div
+          @click="toggleSidebar"
+          class="group flex justify-center align-middle md:hidden w-full h-full transition-all duration-300 hover:bg-blue-400 hover:text-white"
+        >
+          <!-- Show icon based on side bar toggle -->
+          <!-- Icons -->
+          <i
+            v-show="sidebarActive"
+            class="fa fa-times text-black group-hover:text-white my-auto mx-auto"
+            aria-hidden="true"
+          ></i>
+          <i
+            v-show="!sidebarActive"
+            class="fa fa-bars text-black group-hover:text-white my-auto mx-auto"
+            aria-hidden="true"
+          ></i>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="flex-auto w-1/2 flex align-middle justify-center">
+        <a class="h-max flex justify-center align-middle" href="/">
+          <img
+            class="mx-auto my-auto max-w-36 md:max-h-28 sm:max-h-14 max-h-8 md:mt-4"
+            src="/images/Danoya-logo-sm.png"
+            alt="Danoya Logo"
+          />
+        </a>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="flex-auto w-1/4 flex justify-center">
+        <!-- Only one of 2 elements below will be visible at any given time -->
+        <button
+          class="hidden md:block border-2 opacity-75 transition-all border-gray-200 py-2 px-4 my-auto text-gray-200 rounded-md h-12 hover:bg-blue-400 hover:text-white"
+        >
+          Book now
+        </button>
+        <div
+          class="group flex justify-center md:hidden w-full h-full transition-all duration-300 bg-blue-400 hover:bg-gray-700"
+        >
+          <i
+            class="fa fa-calendar-o text-white my-auto group-hover:text-blue-400"
+            aria-hidden="true"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Side bar -->
+    <NavSidebar
+      :navLinks="navLinks"
+      :sidebarState="sidebarActive"
+      :toggleSidebar="toggleSidebar"
+    />
+  </div>
+</template>
+
+<script>
+export default {
+  setup() {
+    const count = ref(0);
+    const sidebarActive = ref(false);
+
+    const navLinks = [
+      {
+        href: "/",
+        linkName: "Home",
+        iconClass: "fa fa-home",
+      },
+      {
+        href: "/about",
+        linkName: "About",
+        iconClass: "fa fa-book",
+      },
+      {
+        href: "/contact",
+        linkName: "Contact",
+        iconClass: "fa fa-envelope",
+      },
+      {
+        href: "/history",
+        linkName: "History",
+        iconClass: "fa fa-book",
+      },
+      {
+        href: "/villas",
+        linkName: "Our Villas",
+        iconClass: "fa fa-building",
+      },
+    ];
+
+    // Toggles sidebar
+    function toggleSidebar() {
+      sidebarActive.value = !sidebarActive.value;
+      console.log("Changed to sidebar : ", sidebarActive.value);
+    }
+
+    // expose to template and other options API hooks
+    return {
+      count,
+      sidebarActive,
+      toggleSidebar,
+      navLinks,
+    };
+  },
+};
+</script>
+
+<style></style>
