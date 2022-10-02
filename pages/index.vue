@@ -7,11 +7,17 @@
   />
   <info-section />
   <villa-carousel />
+  <text-and-gallery />
   <Footer />
 </template>
 
 <script>
+import TextAndGallery from "../components/Sections/TextAndGallery.vue";
+
 export default {
+  components: {
+    TextAndGallery,
+  },
   setup() {},
 };
 </script>
