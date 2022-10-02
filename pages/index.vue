@@ -6,6 +6,7 @@
     subHeading="Convenience at your fingertips"
   />
   <info-section />
+  <villa-carousel />
   <Footer />
 </template>
 
