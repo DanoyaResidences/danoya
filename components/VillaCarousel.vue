@@ -22,8 +22,8 @@
               </div>  -->
       </div>
 
-      <div class="w-full px-5 py-3 bg-black/40 text-center">
-        <!-- {{ showCurrentActiveCaption(slideActiveIndex) }} -->
+      <div class="w-full px-5 py-3 text-center">
+        {{ showCurrentActiveCaption(slideActiveIndex) }}
       </div>
       <!-- The previous button -->
       <a

@@ -2,7 +2,7 @@
   <div
     :class="
       navbarVisible
-        ? 'sticky top-0 z-10 mt-36 bg-gray-300 transition-all hidden md:block duration-500'
+        ? 'sticky top-0 z-10 mt-36 bg-gray-200 transition-all hidden md:block duration-500'
         : 'sticky top-0 z-10 mt-36 bg-transparent transition-all hidden md:block duration-500'
     "
   >
