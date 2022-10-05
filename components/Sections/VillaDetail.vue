@@ -9,14 +9,16 @@
             class="hover:bg-gray-200 p-2 transition-all duration-200"
             :key="'villa-detail-button-' + index"
           >
-            <a href="#">
+            <a :href="'#' + underlineAllSpaces(item.name)">
               <h4 class="font-medium text-base">{{ item.name }}</h4>
               <div>{{ item.subText }}</div>
             </a>
           </li>
         </ul>
         <!-- Vertical text -->
-        <div class="absolute text-gray-400 -rotate-90 -left-16 text-lg">
+        <div
+          class="absolute text-gray-400 -rotate-90 -left-16 -bottom-20 text-lg"
+        >
           Villa Types
         </div>
       </div>
@@ -24,10 +26,12 @@
     <!-- Villa detail section -->
     <div class="w-3/4">
       <div
-        class="shadow-md p-4"
+        class="p-4 pt-20"
         v-for="(item, index) in villaDetails"
         :key="'villa-detail-' + index"
       >
+        <!-- Title -->
+        <a :id="underlineAllSpaces(item.name)"> </a>
         <h2 class="font-semibold text-3xl m-2">{{ item.name }}</h2>
         <div class="m-4">{{ item.area }}</div>
         <!-- Room carousel -->
@@ -35,10 +39,12 @@
           <img src="#" alt="Sample" class="w-full h-[500px] bg-gray-200" />
         </div>
         <!-- Gallery buttons -->
-        <div class="bg-gray-100 mt-1 w-1/4 ml-auto h-10 flex align-middle">
+        <div
+          class="bg-gray-100 mt-1 w-1/4 ml-auto h-10 flex align-middle rounded-md"
+        >
           <div class="flex flex-row w-full">
             <button
-              class="w-1/4 hover:bg-gray-200"
+              class="w-1/4 hover:bg-gray-200 rounded-l-md"
               @click="
                 modifyGalleryCounterForVilla(item.name, -1, item.images.length)
               "
@@ -51,7 +57,7 @@
               }}
             </div>
             <button
-              class="w-1/4 hover:bg-gray-200"
+              class="w-1/4 hover:bg-gray-200 rounded-r-md"
               @click="
                 modifyGalleryCounterForVilla(item.name, 1, item.images.length)
               "
@@ -89,7 +95,11 @@
           <div class="w-2/6 relative pt-6 pl-6">
             <!-- Image slider -->
             <div class="relative">
-              <img src="#" alt="Sample" class="w-7/8 h-[300px] bg-purple-400" />
+              <img
+                src="#"
+                alt="Sample"
+                class="w-7/8 h-[400px] bg-purple-400 pb-20"
+              />
             </div>
             <div
               class="bg-gray-200 absolute left-0 top-0 right-auto bottom-auto w-5/6 h-64 -z-10"
@@ -105,6 +115,25 @@
 export default {
   setup() {
     const villaDetails = [
+      {
+        name: "Imperial 2",
+        subText: "Two bedroom",
+        area: "250-300m²",
+        description:
+          "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
+        images: [
+          { src: "public/" },
+          { src: "public/" },
+          { src: "public/" },
+          { src: "public/" },
+        ],
+        featureIcons: [
+          {
+            type: "fa fa-bed fa-2x",
+            text: "Twin bed",
+          },
+        ],
+      },
       {
         name: "Grand Imperial 3",
         subText: "Our most premium offering",
@@ -143,7 +172,7 @@ export default {
 
       //   If lower than 0
       if (newCount < 0) {
-        newCount = imageMax;
+        newCount = imageMaxIndex;
         // If greater than no of images
       } else if (newCount > imageMaxIndex) {
         newCount = 0;
@@ -153,10 +182,15 @@ export default {
       galleryCounters.value[villaName] = newCount;
     }
 
+    function underlineAllSpaces(string) {
+      return string.replace(/ /g, "_");
+    }
+
     return {
       villaDetails,
       getGalleryCounterForType,
       modifyGalleryCounterForVilla,
+      underlineAllSpaces,
     };
   },
 };
