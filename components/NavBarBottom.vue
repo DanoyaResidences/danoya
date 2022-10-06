@@ -2,7 +2,7 @@
   <div
     :class="
       navbarVisible
-        ? 'sticky top-0 z-10 mt-36 bg-gray-200 transition-all hidden md:block duration-500'
+        ? 'sticky top-0 z-10 mt-36 bg-gray-100 transition-all hidden md:block duration-500'
         : 'sticky top-0 z-10 mt-36 bg-transparent transition-all hidden md:block duration-500'
     "
   >
@@ -51,11 +51,10 @@
       </div>
       <!-- Third column -->
       <!-- Show one of below items based on if navbarVisible -->
-      <!-- Return column with content -->
       <a
         v-show="navbarVisible"
         href="/"
-        class="text-black hover:text-white w-1/6 hover:bg-blue-300 transition-all duration-300"
+        class="text-white bg-blue-300 hover:text-black w-1/6 hover:bg-gray-200 transition-all duration-300"
       >
         <div class="h-full flex justify-center">
           <span class="my-auto">Book now</span>

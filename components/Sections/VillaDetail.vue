@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row mx-auto align-middle w-11/12">
-    <div class="w-1/4">
+    <div class="w-1/4 hidden md:block">
       <!-- Villa selection -->
       <div class="sticky top-0 left-0 pt-24">
         <ul class="list-none">
@@ -23,8 +23,9 @@
         </div>
       </div>
     </div>
+
     <!-- Villa detail section -->
-    <div class="w-3/4">
+    <div class="w-full md:w-3/4">
       <div
         class="p-4 pt-20"
         v-for="(item, index) in villaDetails"
@@ -36,7 +37,12 @@
         <div class="m-4">{{ item.area }}</div>
         <!-- Room carousel -->
         <div class="leading-8 mt-9">
-          <img src="#" alt="Sample" class="w-full h-[500px] bg-gray-200" />
+          <!-- Grab the gallery counter and show associated image from current villa image array-->
+          <img
+            :src="item.images[galleryCounters[item.name]].src"
+            :alt="item.images[galleryCounters[item.name]].alt"
+            class="w-full h-[500px] bg-gray-200 object-cover"
+          />
         </div>
         <!-- Gallery buttons -->
         <div
@@ -69,7 +75,7 @@
         <!-- Villa content section -->
         <div class="flex flex-row mt-8">
           <!-- Left side: text -->
-          <div class="w-4/6 pr-10">
+          <div class="w-full md:w-4/6 md:pr-10">
             <!-- Text description -->
             <div v-html="item.description" class="leading-loose"></div>
 
@@ -83,7 +89,10 @@
               >
                 <!-- Icon -->
                 <div class="w-1/3 text-center mx-auto my-auto">
-                  <i :class="icon.type" aria-hidden="true"></i>
+                  <i
+                    :class="'text-blue-300 ' + icon.type"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Text -->
                 <div class="w-2/3 my-auto">{{ icon.text }}</div>
@@ -92,13 +101,15 @@
           </div>
 
           <!-- Right side: Room cycle gallery -->
-          <div class="w-2/6 relative pt-6 pl-6">
+          <div class="w-2/6 relative pt-6 pl-6 hidden md:block">
             <!-- Image slider -->
             <div class="relative">
+              <auto-carousel />
+
               <img
                 src="#"
                 alt="Sample"
-                class="w-7/8 h-[400px] bg-purple-400 pb-20"
+                class="w-7/8 h-[300px] bg-purple-400 pb-20"
               />
             </div>
             <div
@@ -112,7 +123,9 @@
 </template>
 
 <script>
+import AutoCarousel from "../widgets/AutoCarousel.vue";
 export default {
+  components: { AutoCarousel },
   setup() {
     const villaDetails = [
       {
@@ -122,10 +135,18 @@ export default {
         description:
           "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
         images: [
-          { src: "public/" },
-          { src: "public/" },
-          { src: "public/" },
-          { src: "public/" },
+          { src: "/images/Home/Danoya_LS_1.jpg", alt: "Image 1" },
+          { src: "/images/Home/Danoya_LS_1.jpg", alt: "Image 2" },
+          { src: "/images/Home/Danoya_LS_1.jpg", alt: "Image 3" },
+          { src: "/images/Home/Danoya_LS_1.jpg", alt: "Image 4" },
+        ],
+        slidingImages: [
+          {
+            src: "/images/Home/Danoya_LS_1.jpg",
+          },
+          {
+            src: "/images/Home/Danoya_LS_1.jpg",
+          },
         ],
         featureIcons: [
           {
@@ -141,10 +162,18 @@ export default {
         description:
           "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
         images: [
-          { src: "public/" },
-          { src: "public/" },
-          { src: "public/" },
-          { src: "public/" },
+          { src: "/images/Home/Danoya_LS_1.jpg" },
+          { src: "/images/Home/Danoya_LS_1.jpg" },
+          { src: "/images/Home/Danoya_LS_1.jpg" },
+          { src: "/images/Home/Danoya_LS_1.jpg" },
+        ],
+        slidingImages: [
+          {
+            src: "/images/Home/Danoya_LS_1.jpg",
+          },
+          {
+            src: "/images/Home/Danoya_LS_1.jpg",
+          },
         ],
         featureIcons: [
           {
@@ -156,11 +185,25 @@ export default {
     ];
     const galleryCounters = ref({
       "Grand Imperial 3": 0,
+      "Imperial 2": 0,
     });
 
     function getGalleryCounterForType(villaName) {
       return galleryCounters.value[villaName];
     }
+
+    // function getActiveImageForType(villaName) {
+    //   // Search villa details array for villa in question
+    //   const villaDetails = villaDetails.find(
+    //     (villa) => villa.name === villaName
+    //   );
+    //   //   Grab images
+    //   const images = villaDetails.images;
+    //   //   Find current counter for type
+    //   const currentCounter = getGalleryCounterForType(villaName);
+    //   //   Return image details
+    //   return images[currentCounter];
+    // }
 
     function modifyGalleryCounterForVilla(villaName, increment, imagesLength) {
       // Grab current count
@@ -191,6 +234,7 @@ export default {
       getGalleryCounterForType,
       modifyGalleryCounterForVilla,
       underlineAllSpaces,
+      galleryCounters,
     };
   },
 };

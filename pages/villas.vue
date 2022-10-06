@@ -11,9 +11,12 @@
 
 <script>
 import VillaDetail from "../components/Sections/VillaDetail.vue";
+import AutoCarousel from "../components/widgets/AutoCarousel.vue";
+
 export default {
   components: {
     VillaDetail,
+    AutoCarousel,
   },
 };
 </script>

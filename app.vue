@@ -9,6 +9,11 @@
 export default {
   setup() {
     useHead({
+      script: [
+        {
+          src: "./node_modules/tw-elements/dist/js/index.min.js",
+        },
+      ],
       link: [
         {
           rel: "stylesheet",
