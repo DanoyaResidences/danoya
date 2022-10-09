@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[80vh] md:h-screen -mt-52">
+  <div class="h-[80vh] md:h-screen -mt-56">
     <!-- Parallax -->
     <div
       :style="`background-image: url(${imagePath})`"
