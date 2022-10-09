@@ -2,8 +2,8 @@
   <div
     :class="
       navbarVisible
-        ? 'sticky top-0 z-10 mt-36 bg-gray-100 transition-all hidden md:block duration-500'
-        : 'sticky top-0 z-10 mt-36 bg-transparent transition-all hidden md:block duration-500'
+        ? 'sticky top-0 z-10 mt-40 bg-gray-100 transition-all hidden md:block duration-500'
+        : 'sticky top-0 z-10 mt-40 bg-transparent transition-all hidden md:block duration-500'
     "
   >
     <div class="flex flex-row">

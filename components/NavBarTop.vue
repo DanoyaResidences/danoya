@@ -29,7 +29,7 @@
       <div class="flex-auto w-1/2 flex align-middle justify-center">
         <a class="h-max flex justify-center align-middle" href="/">
           <img
-            class="mx-auto my-auto max-w-36 md:max-h-28 sm:max-h-14 max-h-8 md:mt-4"
+            class="mx-auto my-auto max-w-36 md:max-h-36 sm:max-h-14 max-h-8 md:mt-4"
             src="/images/Danoya-logo-sm.png"
             alt="Danoya Logo"
           />
@@ -40,7 +40,7 @@
       <div class="flex-auto w-1/4 flex justify-center">
         <!-- Only one of 2 elements below will be visible at any given time -->
         <button
-          class="hidden md:block border-2 opacity-75 transition-all border-gray-200 py-2 px-4 my-auto text-gray-200 rounded-md h-12 hover:bg-blue-400 hover:text-white"
+          class="hidden md:block border-2 opacity-75 hover:opacity-90 transition-all duration-200 border-gray-200 py-2 px-4 my-auto text-white rounded-md h-12 hover:bg-blue-400"
         >
           Book now
         </button>
