@@ -1,7 +1,11 @@
 <template>
   <nav-bar-top />
   <nav-bar-bottom />
-  <TopParallax heading="Contact" subHeading="Reach out to us" />
+  <TopParallax
+    heading="Contact"
+    subHeading="Reach out to us"
+    imagePath="/images/headers/contact_parallax.jpeg"
+  />
   <Footer />
 </template>
 

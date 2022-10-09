@@ -2,7 +2,7 @@
   <div class="h-[80vh] md:h-screen -mt-52">
     <!-- Parallax -->
     <div
-      style="background-image: url('/images/Home/Danoya_LS_1.jpg')"
+      :style="`background-image: url(${imagePath})`"
       class="w-full h-full bg-no-repeat bg-cover bg-fixed bg-center"
     >
       <!-- Picture filter -->
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  props: ["heading", "subHeading"],
+  props: ["heading", "subHeading", "imagePath"],
 };
 </script>
 

@@ -4,6 +4,7 @@
   <TopParallax
     heading="Our villas"
     subHeading="A selection for every type of traveller"
+    imagePath="images/headers/villas_parallax.jpeg"
   />
   <villa-detail />
   <Footer />

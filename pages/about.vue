@@ -1,7 +1,11 @@
 <template>
   <nav-bar-top />
   <nav-bar-bottom />
-  <TopParallax heading="About" subHeading="A brief history..." />
+  <TopParallax
+    heading="About"
+    subHeading="A brief history..."
+    imagePath="/images/headers/about_parallax.jpeg"
+  />
   <Footer />
 </template>
 

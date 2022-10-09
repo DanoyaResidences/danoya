@@ -4,6 +4,7 @@
   <TopParallax
     heading="Home starts here"
     subHeading="Convenience at your fingertips"
+    imagePath="/images/headers/home_parallax.jpeg"
   />
   <info-section />
   <villa-carousel />

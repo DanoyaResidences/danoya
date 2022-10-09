@@ -111,8 +111,6 @@ function showCurrentActiveCaption(currentAciveIndex) {
 // Change the slide index to the parameter value
 // If last, return to beginning
 function setActiveSlideIndex(n) {
-  // Convert to int
-  console.log("setting slide to: ", n);
   // if n is greater than carousel image array length
   if (n > carouselImages.length - 1) {
     // Set index to 0
