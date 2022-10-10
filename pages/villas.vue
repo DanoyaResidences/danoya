@@ -8,10 +8,12 @@
   />
   <info-section :content="infoSectionText" />
   <villa-detail />
+  <our-services />
   <Footer />
 </template>
 
 <script>
+import OurServices from "../components/Sections/OurServices.vue";
 import VillaDetail from "../components/Sections/VillaDetail.vue";
 import AutoCarousel from "../components/widgets/AutoCarousel.vue";
 
@@ -36,6 +38,7 @@ export default {
   components: {
     VillaDetail,
     AutoCarousel,
+    OurServices,
   },
   setup() {
     return {
