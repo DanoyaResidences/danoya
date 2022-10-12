@@ -6,6 +6,7 @@
       <h1 class="mx-auto text-center text-xl md:text-3xl mt-4">Our Services</h1>
     </div>
     <div class="flex flex-row flex-wrap">
+      <!-- Service iteration -->
       <div
         class="xl:w-1/3 sm:w-1/2 w-full"
         v-for="(item, index) in serviceData"
@@ -21,9 +22,11 @@
               </div>
             </div>
           </div>
+          <!-- Heading -->
           <h5 class="text-center m-3 font-semibold text-sm md:text-base">
             {{ item.heading.toUpperCase() }}
           </h5>
+          <!-- Text -->
           <p class="w-3/4 mx-auto text-xs text-center md:text-sm">
             {{ item.text }}
           </p>
