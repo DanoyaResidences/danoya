@@ -9,6 +9,7 @@
   <info-section :content="infoSectionText" />
   <villa-carousel />
   <text-and-gallery />
+  <info-section :content="ourLocationText" />
   <Footer />
 </template>
 
@@ -32,6 +33,23 @@ const infoSectionText = {
   imageSrc: "/images/art/villa-art_2_md.jpeg",
 };
 
+const ourLocationText = {
+  title: "Our location",
+  text: `<p
+          class="font-serif text-sm md:text-md line leading-7 md:leading-9 mx-4 tracking-wide"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+          sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas
+          itaque quidem. Tenetur quo, iusto laudantium molestiae animi odio
+          quasi molestias odit. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Amet eos quaerat maiores ipsa aliquid sequi
+          asperiores at illo corporis numquam. Ad saepe voluptatibus aut a porro
+          veritatis dolorem quo rem.
+        </p>
+        <span class="mt-8 ml-4">- Danoya's History</span>`,
+  imageSrc: "/images/art/villa-art_2_md.jpeg",
+};
+
 export default {
   components: {
     TextAndGallery,
@@ -39,6 +57,7 @@ export default {
   setup() {
     return {
       infoSectionText,
+      ourLocationText,
     };
   },
 };
