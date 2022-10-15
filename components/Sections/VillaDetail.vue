@@ -46,7 +46,7 @@
           <img
             :src="item.images[galleryCounters[item.name]].src"
             :alt="item.images[galleryCounters[item.name]].alt"
-            class="w-full md:h-[500px] h-96 bg-gray-200 object-fill md:object-cover"
+            class="w-full md:h-[500px] h-96 bg-gray-200 object-cover"
           />
         </div>
         <!-- Gallery buttons -->

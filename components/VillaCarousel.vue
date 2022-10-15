@@ -5,37 +5,31 @@
     >
       Our Villas
     </h1>
-    <div class="relative w-full h-full mx-auto">
+    <div class="relative w-full">
       <div
         v-for="(item, index) in carouselImages"
         :key="'carousel-img-' + index"
-        :class="showHideImageOnActiveStatus(index)"
+        :class="`w-full ` + showHideImageOnActiveStatus(index)"
       >
-        <img
-          class="w-full h-[400px] md:h-[600px] object-cover"
-          :src="item.imageSrc"
-        />
-        <!-- <div
-                class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white"}
-              >
-                Flower {index} Caption
-              </div>  -->
+        <img class="w-full max-h-[500px] object-cover" :src="item.imageSrc" />
       </div>
 
+      <!-- Caption div -->
       <div class="w-full px-5 py-3 text-center">
         {{ showCurrentActiveCaption(slideActiveIndex) }}
       </div>
       <!-- The previous button -->
       <a
-        class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+        class="absolute left-0 top-44 md:top-64 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-blue-400 cursor-pointer"
         @click="moveSlide(-1)"
       >
         ❮
       </a>
 
       <!-- The next button -->
+
       <a
-        class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+        class="absolute right-0 top-44 md:top-64 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-blue-400 cursor-pointer"
         @click="moveSlide(1)"
       >
         ❯
@@ -89,9 +83,9 @@ function setSlideTo(n) {
 // Apply different css classes on slide images based on index of image
 function showHideImageOnActiveStatus(imageIndex) {
   if (slideActiveIndex.value == imageIndex) {
-    return `slide relative`;
+    return `slide absolute transition-all duration-300 opacity-100`;
   } else {
-    return `slide relative hidden`;
+    return `slide absolute transition-all duration-300 opacity-0`;
   }
 }
 // Provides different css classes for dots based on if image index is equal to current active index
@@ -117,7 +111,7 @@ function setActiveSlideIndex(n) {
     slideActiveIndex.value = 0;
   } else if (n < 0) {
     // Set it to last item
-    slideActiveIndex.value = carouselImages.length;
+    slideActiveIndex.value = carouselImages.length - 1;
   } else {
     // Else set to parameter value
     slideActiveIndex.value = n;

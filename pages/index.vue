@@ -7,7 +7,8 @@
     imagePath="/images/headers/home_parallax.jpeg"
   />
   <info-section :content="infoSectionText" />
-  <villa-carousel />
+  <!-- <villa-carousel /> -->
+  <fade-carousel />
   <text-and-gallery />
   <info-section :content="ourLocationText" />
   <Footer />
@@ -15,6 +16,7 @@
 
 <script>
 import TextAndGallery from "../components/Sections/TextAndGallery.vue";
+import FadeCarousel from "../components/Sections/FadeCarousel.vue";
 
 const infoSectionText = {
   title: "The title",
@@ -53,6 +55,7 @@ const ourLocationText = {
 export default {
   components: {
     TextAndGallery,
+    FadeCarousel,
   },
   setup() {
     return {
