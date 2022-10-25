@@ -86,11 +86,6 @@ export default {
         iconClass: "fa fa-envelope",
       },
       {
-        href: "/history",
-        linkName: "History",
-        iconClass: "fa fa-book",
-      },
-      {
         href: "/villas",
         linkName: "Our Villas",
         iconClass: "fa fa-building",

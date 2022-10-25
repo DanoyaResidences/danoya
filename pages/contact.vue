@@ -6,11 +6,17 @@
     subHeading="Reach out to us"
     imagePath="/images/headers/contact_parallax.jpeg"
   />
+  <contact-form />
   <Footer />
 </template>
 
 <script>
-export default {};
+import ContactForm from "../components/forms/ContactForm.vue";
+export default {
+  components: {
+    ContactForm,
+  },
+};
 </script>
 
 <style></style>

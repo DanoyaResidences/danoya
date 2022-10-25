@@ -90,16 +90,16 @@ export default {
   setup() {
     const navLinks = [
       {
+        href: "/",
+        linkName: "Home",
+      },
+      {
         href: "/about",
         linkName: "About",
       },
       {
         href: "/contact",
         linkName: "Contact",
-      },
-      {
-        href: "/history",
-        linkName: "History",
       },
       {
         href: "/villas",

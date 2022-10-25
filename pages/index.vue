@@ -21,7 +21,7 @@ import FadeCarousel from "../components/Sections/FadeCarousel.vue";
 const infoSectionText = {
   title: "The title",
   text: `<p
-          class="font-serif text-sm md:text-md line leading-7 md:leading-9 mx-4 tracking-wide"
+          class="md:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-widest"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
           sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas
@@ -38,7 +38,7 @@ const infoSectionText = {
 const ourLocationText = {
   title: "Our location",
   text: `<p
-          class="font-serif text-sm md:text-md line leading-7 md:leading-9 mx-4 tracking-wide"
+          class="md:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-widest"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
           sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas

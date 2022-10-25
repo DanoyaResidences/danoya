@@ -5,20 +5,28 @@
     </h2>
     <!-- First row of image and content -->
     <div class="flex flex-row align-middle flex-wrap">
-      <div class="w-full md:w-2/6 my-auto">
-        <p class="text-base tracking-widest mb-8 mt-5 mx-4">
+      <div
+        class="w-full md:w-5/12 my-auto text-sm leading-7 tracking-widest mb-10 px-2"
+      >
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
           voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
           repudiandae quo? Consectetur.
         </p>
-        <p class="text-base tracking-widest mb-8 mt-5 mx-4">
+        <br />
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro.
         </p>
-        <a class="mx-5" href="/about">Learn More</a>
+        <br />
+        <a
+          class="font-serif tracking-wider link-secondary transition-all duration-300 hover:ml-4 underline hover:link-primary"
+          href="/about"
+          >Learn More</a
+        >
       </div>
-      <div class="my-10 md:mb-0 w-full md:w-4/6 flex align-bottom">
+      <div class="my-10 md:mb-0 w-full md:w-7/12 flex align-bottom">
         <img
           class="object-cover"
           :src="returnCurrentGalleryImageSrc(galleryCounter).src"
@@ -57,14 +65,17 @@
           alt=""
         />
       </div>
-      <div class="w-full md:w-1/2 my-auto">
-        <p class="text-base tracking-widest mb-8 mt-5 mx-2">
+      <div
+        class="w-full md:w-1/2 my-auto text-sm leading-7 tracking-widest px-2"
+      >
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
           voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
           repudiandae quo? Consectetur.
         </p>
-        <p class="text-base tracking-widest mb-8 mt-5 mx-2">
+        <br />
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
           voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
