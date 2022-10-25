@@ -3,7 +3,7 @@ export const villaData = [
   {
     name: "Grand Imperial 3",
     subText: "Our most premium offering",
-    area: "250-300m²",
+    area: "240-277m²",
     description:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
     images: [
@@ -85,7 +85,7 @@ export const villaData = [
   {
     name: "Imperial 3",
     subText: "Open plan living 3 bedroom",
-    area: "250-300m²",
+    area: "318m²",
     description:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
     images: [
@@ -163,7 +163,7 @@ export const villaData = [
   {
     name: "Imperial 2",
     subText: "Two bedroom",
-    area: "250-300m²",
+    area: "170m²",
     description:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
     images: [
@@ -237,7 +237,7 @@ export const villaData = [
   {
     name: "Imperial 1",
     subText: "Two bedroom",
-    area: "250-300m²",
+    area: "100m²",
     description:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
     images: [
@@ -295,7 +295,7 @@ export const villaData = [
   {
     name: "Royal 5",
     subText: "Five bedroom",
-    area: "250-300m²",
+    area: "300m²",
     description:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
     images: [
@@ -361,7 +361,7 @@ export const villaData = [
   {
     name: "Royal 3",
     subText: "Five bedroom",
-    area: "250-300m²",
+    area: "187m²",
     description:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
     images: [
@@ -439,7 +439,7 @@ export const villaData = [
   {
     name: "Royal 2",
     subText: "Five bedroom",
-    area: "250-300m²",
+    area: "96m²",
     description:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
     images: [
