@@ -12,6 +12,7 @@
     "nuxt": "3.0.0-rc.11"
   },
   "dependencies": {
-    "tw-elements": "^1.0.0-alpha12"
+    "tw-elements": "^1.0.0-alpha12",
+    "validator": "^13.7.0"
   }
 }
