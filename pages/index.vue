@@ -9,7 +9,7 @@
   <info-section :content="infoSectionText" />
   <!-- <villa-carousel /> -->
   <fade-carousel />
-  <text-and-gallery />
+  <text-and-gallery :content="textAndGalleryText" />
   <info-section :content="ourLocationText" />
   <Footer />
 </template>
@@ -52,6 +52,55 @@ const ourLocationText = {
   imageSrc: "/images/art/villa-art_2_md.jpeg",
 };
 
+const textAndGalleryText = {
+  title: `The Title`,
+  gallery: [
+    {
+      src: "images/spirit/spirit_1_web.jpeg",
+      alt: "",
+    },
+    {
+      src: "images/spirit/spirit_2_web.jpeg",
+      alt: "",
+    },
+    {
+      src: "images/spirit/spirit_3_web.jpeg",
+      alt: "",
+    },
+  ],
+  topText: `<p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
+          officia consequatur, labore voluptatibus reprehenderit corporis porro
+          voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
+          repudiandae quo? Consectetur.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
+          officia consequatur, labore voluptatibus reprehenderit corporis porro.
+        </p>
+        <br />
+        <a
+          class="font-serif tracking-wider link-secondary transition-all duration-300 hover:ml-4 underline hover:link-primary"
+          href="/about"
+          >Learn More</a
+        >`,
+  bottomText: `<p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
+          officia consequatur, labore voluptatibus reprehenderit corporis porro
+          voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
+          repudiandae quo? Consectetur.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
+          officia consequatur, labore voluptatibus reprehenderit corporis porro
+          voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
+          repudiandae quo? Consectetur.
+        </p>`,
+  bottomImage: "images/villas/Grand_Imperial/carousel/GI1_web.jpeg",
+};
+
 export default {
   components: {
     TextAndGallery,
@@ -61,6 +110,7 @@ export default {
     return {
       infoSectionText,
       ourLocationText,
+      textAndGalleryText,
     };
   },
 };

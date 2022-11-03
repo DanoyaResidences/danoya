@@ -1,32 +1,15 @@
 <template>
-  <div class="w-full md:w-10/12 mx-auto">
-    <h2 class="text-3xl tracking-wider text-left md:text-center m-8">
-      The title
+  <div class="w-10/12 md:w-10/12 mx-auto mt-20">
+    <h2 class="text-3xl tracking-wider text-left md:text-center m-4">
+      {{ content.title }}
     </h2>
     <!-- First row of image and content -->
     <div class="flex flex-row align-middle flex-wrap">
       <div
         class="w-full md:w-5/12 my-auto text-sm leading-7 tracking-widest mb-10 px-2"
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
-          officia consequatur, labore voluptatibus reprehenderit corporis porro
-          voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
-          repudiandae quo? Consectetur.
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
-          officia consequatur, labore voluptatibus reprehenderit corporis porro.
-        </p>
-        <br />
-        <a
-          class="font-serif tracking-wider link-secondary transition-all duration-300 hover:ml-4 underline hover:link-primary"
-          href="/about"
-          >Learn More</a
-        >
-      </div>
-      <div class="my-10 md:mb-0 w-full md:w-7/12 flex align-bottom">
+        v-html="content.topText"
+      ></div>
+      <div class="mb-10 mt-4 md:mb-0 w-full md:w-7/12 flex align-bottom">
         <img
           class="object-cover"
           :src="returnCurrentGalleryImageSrc(galleryCounter).src"
@@ -43,7 +26,7 @@
           <div class="text-center mt-1">
             <p>{{ galleryCounter + 1 }}</p>
             <p>--</p>
-            <p>{{ galleryImages.length }}</p>
+            <p>{{ content.gallery.length }}</p>
           </div>
           <button
             class="hover:bg-gray-400 h-10 transition-all duration-100"
@@ -59,64 +42,37 @@
       <div
         class="my-10 md:mt-0 md:w-1/2 hidden md:show md:flex md:relative bottom-8"
       >
-        <img
-          class="object-cover"
-          src="images/villas/Grand_Imperial/carousel/GI1_web.jpeg"
-          alt=""
-        />
+        <img class="object-cover" :src="content.bottomImage" alt="" />
       </div>
       <div
         class="w-full md:w-1/2 my-auto text-sm leading-7 tracking-widest px-2"
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
-          officia consequatur, labore voluptatibus reprehenderit corporis porro
-          voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
-          repudiandae quo? Consectetur.
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
-          officia consequatur, labore voluptatibus reprehenderit corporis porro
-          voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
-          repudiandae quo? Consectetur.
-        </p>
-      </div>
+        v-html="content.bottomText"
+      ></div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  setup() {
+  props: ["content"],
+  setup(props) {
     const galleryCounter = ref(0);
-    const galleryImages = [
-      {
-        src: "images/spirit/spirit_1_web.jpeg",
-        alt: "",
-      },
-      {
-        src: "images/spirit/spirit_2_web.jpeg",
-        alt: "",
-      },
-      {
-        src: "images/spirit/spirit_3_web.jpeg",
-        alt: "",
-      },
-    ];
-
+    // Returns the current gallery item based on index
     function returnCurrentGalleryImageSrc(galleryIndex) {
-      return galleryImages[galleryIndex];
+      return props.content.gallery[galleryIndex];
     }
 
+    //  Click handler for modifying gallery counter by an increment
     function modifygalleryCounter(increment) {
       const newCount = galleryCounter.value + increment;
-      //   If lower than 0
+      //   If lower than 0, return to last item
       if (newCount < 0) {
-        galleryCounter.value = galleryImages.length - 1;
-        // If greater than no of images
-      } else if (newCount > galleryImages.length - 1) {
+        galleryCounter.value = props.content.gallery.length - 1;
+        // If greater than no of images, return to first item
+      } else if (newCount > props.content.gallery.length - 1) {
         galleryCounter.value = 0;
+
+        // else return new count
       } else {
         galleryCounter.value = newCount;
       }
@@ -124,7 +80,6 @@ export default {
 
     return {
       galleryCounter,
-      galleryImages,
       modifygalleryCounter,
       returnCurrentGalleryImageSrc,
     };
