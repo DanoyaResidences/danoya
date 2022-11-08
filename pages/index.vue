@@ -17,6 +17,11 @@
 <script>
 import TextAndGallery from "../components/Sections/TextAndGallery.vue";
 import FadeCarousel from "../components/Sections/FadeCarousel.vue";
+// const { find } = await useStrapi4();
+
+// const { find } = useStrapi();
+// const response = await find("products");
+// console.log("response: ", response);
 
 const infoSectionText = {
   title: "The title",

@@ -8,10 +8,13 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/strapi": "^1.6.1",
     "@nuxtjs/tailwindcss": "^5.3.3",
     "nuxt": "3.0.0-rc.11"
   },
   "dependencies": {
+    "marked": "^4.2.2",
+    "moment": "^2.29.4",
     "tw-elements": "^1.0.0-alpha12",
     "validator": "^13.7.0"
   }

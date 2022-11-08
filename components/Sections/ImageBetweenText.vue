@@ -61,7 +61,7 @@ export default {
     },
   },
   setup(props) {
-    // Stores firstr
+    // Stores current gallery index
     const galleryCounter = ref(0);
     // Computes team member that is at index of gallery counter
     const currentTeamMember = computed(() => {
