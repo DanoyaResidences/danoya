@@ -1,14 +1,16 @@
 <template>
-  <nav-bar-top />
-  <nav-bar-bottom />
-  <div class="h-56 bg-gray-500 -mt-56"></div>
-  <blog-list
-    :blogs="blogs"
-    :changePage="changePage"
-    :pagination="pagination"
-    :currentPage="currentPage"
-  />
-  <Footer />
+  <div>
+    <nav-bar-top />
+    <nav-bar-bottom />
+    <div class="h-56 bg-gray-500 -mt-56"></div>
+    <blog-list
+      :blogs="blogs"
+      :changePage="changePage"
+      :pagination="pagination"
+      :currentPage="currentPage"
+    />
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -41,16 +43,18 @@ export default {
       });
       //   Set reactive variables
       blogs.value = response.data;
-      pagination.value = response.meta;
+      pagination.value = response.meta.pagination;
     }
 
     // Pagination
     // Changes the page to page parameter value
     async function changePage(newPage) {
+      console.log(`Changing page from ${currentPage.value} to ${newPage}`);
       // Set current page var to new page
       currentPage.value = newPage;
       //   Use updated page to retrieve blogs again
       await retrieveBlogs();
+      console.log("blogs.value: ", blogs.value);
     }
 
     return { blogs, changePage, pagination, currentPage };

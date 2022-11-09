@@ -1,5 +1,10 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
+require("dotenv").config();
 export default defineNuxtConfig({
+  buildModules: [
+    // Simple usage
+    "@nuxtjs/dotenv",
+  ],
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/strapi"],
   strapi: {
     url: process.env.STRAPI_URL || "http://localhost:1337",
