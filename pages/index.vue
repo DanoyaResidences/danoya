@@ -1,17 +1,19 @@
 <template>
-  <nav-bar-top />
-  <nav-bar-bottom />
-  <TopParallax
-    heading="Home starts here"
-    subHeading="Convenience at your fingertips"
-    imagePath="/images/headers/home_parallax.jpeg"
-  />
-  <info-section :content="infoSectionText" />
-  <!-- <villa-carousel /> -->
-  <fade-carousel />
-  <text-and-gallery :content="textAndGalleryText" />
-  <info-section :content="ourLocationText" />
-  <Footer />
+  <div>
+    <nav-bar-top />
+    <nav-bar-bottom />
+    <TopParallax
+      heading="Home starts here"
+      subHeading="Convenience at your fingertips"
+      imagePath="/images/headers/home_parallax.jpeg"
+    />
+    <info-section :content="infoSectionText" />
+    <!-- <villa-carousel /> -->
+    <fade-carousel />
+    <text-and-gallery :content="textAndGalleryText" />
+    <info-section :content="ourLocationText" />
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -85,10 +87,10 @@ const textAndGalleryText = {
           officia consequatur, labore voluptatibus reprehenderit corporis porro.
         </p>
         <br />
-        <a
+        <NuxtLink
           class="font-serif tracking-wider link-secondary transition-all duration-300 hover:ml-4 underline hover:link-primary"
-          href="/about"
-          >Learn More</a
+          to="/about"
+          >Learn More</NuxtLink
         >`,
   bottomText: `<p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,

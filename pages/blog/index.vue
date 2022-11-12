@@ -2,7 +2,7 @@
   <div>
     <nav-bar-top />
     <nav-bar-bottom />
-    <div class="h-56 bg-gray-500 -mt-56"></div>
+    <header-image />
     <blog-list
       :blogs="blogs"
       :changePage="changePage"
@@ -14,7 +14,11 @@
 </template>
 
 <script>
+import HeaderImage from "../../components/blog/HeaderImage.vue";
+
 export default {
+  components: { HeaderImage },
+
   async setup() {
     // For Strapi DB access
     const { find } = useStrapi();
@@ -35,6 +39,7 @@ export default {
       const response = await find("articles", {
         // STRAPI request params
         populate: "*",
+        sort: ["publishedAt:desc"],
         pagination: {
           page: currentPage.value,
           pageSize: 10,
@@ -49,12 +54,10 @@ export default {
     // Pagination
     // Changes the page to page parameter value
     async function changePage(newPage) {
-      console.log(`Changing page from ${currentPage.value} to ${newPage}`);
       // Set current page var to new page
       currentPage.value = newPage;
       //   Use updated page to retrieve blogs again
       await retrieveBlogs();
-      console.log("blogs.value: ", blogs.value);
     }
 
     return { blogs, changePage, pagination, currentPage };

@@ -1,15 +1,17 @@
 <template>
-  <nav-bar-top />
-  <nav-bar-bottom />
-  <TopParallax
-    heading="About"
-    subHeading="A brief history..."
-    imagePath="/images/headers/about_parallax.jpeg"
-  />
-  <info-section :content="topSectionText" />
-  <text-and-gallery :content="textAndGalleryText" />
-  <image-between-text :content="ourTeamContent" />
-  <Footer />
+  <div>
+    <nav-bar-top />
+    <nav-bar-bottom />
+    <TopParallax
+      heading="About"
+      subHeading="A brief history..."
+      imagePath="/images/headers/about_parallax.jpeg"
+    />
+    <info-section :content="topSectionText" />
+    <text-and-gallery :content="textAndGalleryText" />
+    <image-between-text :content="ourTeamContent" />
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -61,10 +63,10 @@ const textAndGalleryText = {
           officia consequatur, labore voluptatibus reprehenderit corporis porro.
         </p>
         <br />
-        <a
+        <NuxtLink
           class="font-serif tracking-wider link-secondary transition-all duration-300 hover:ml-4 underline hover:link-primary"
-          href="/about"
-          >Learn More</a
+          to="/about"
+          >Learn More</NuxtLink
         >`,
   bottomText: `<p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,

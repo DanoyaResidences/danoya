@@ -27,13 +27,13 @@
 
       <!-- Column 2 -->
       <div class="flex-auto w-1/2 flex align-middle justify-center">
-        <a class="h-max flex justify-center align-middle" href="/">
+        <NuxtLink class="h-max flex justify-center align-middle" to="/">
           <img
             class="mx-auto my-auto max-w-36 md:max-h-36 sm:max-h-14 max-h-8 md:mt-4"
             src="/images/Danoya-logo-sm.png"
             alt="Danoya Logo"
           />
-        </a>
+        </NuxtLink>
       </div>
 
       <!-- Column 3 -->

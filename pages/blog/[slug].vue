@@ -2,15 +2,16 @@
   <div>
     <nav-bar-top />
     <nav-bar-bottom />
-    <div class="h-56 bg-gray-500 -mt-56"></div>
+    <header-image />
     <blog-content :blog="blogArticle" :blogList="blogList" />
     <Footer />
   </div>
 </template>
 
 <script>
+import HeaderImage from "../../components/blog/HeaderImage.vue";
 export default {
-  components: {},
+  components: { HeaderImage },
   async setup() {
     // Init strapi
     const { findOne, find } = useStrapi();

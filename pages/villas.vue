@@ -1,15 +1,17 @@
 <template>
-  <nav-bar-top />
-  <nav-bar-bottom />
-  <TopParallax
-    heading="Our villas"
-    subHeading="A selection for every type of traveller"
-    imagePath="images/headers/villas_parallax.jpeg"
-  />
-  <info-section :content="infoSectionText" />
-  <villa-detail />
-  <our-services />
-  <Footer />
+  <div>
+    <nav-bar-top />
+    <nav-bar-bottom />
+    <TopParallax
+      heading="Our villas"
+      subHeading="A selection for every type of traveller"
+      imagePath="images/headers/villas_parallax.jpeg"
+    />
+    <info-section :content="infoSectionText" />
+    <villa-detail />
+    <our-services />
+    <Footer />
+  </div>
 </template>
 
 <script>

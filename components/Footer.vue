@@ -7,13 +7,13 @@
       <div
         class="flex-auto w-full sm:w-1/2 md:w-1/4 justify-center text-center pt-4"
       >
-        <a href="/">
+        <NuxtLink to="/">
           <img
             class="mx-auto max-w-22 max-h-28 justify-center"
             src="/images/Danoya-logo-sm.png"
             alt="Danoya small logo"
           />
-        </a>
+        </NuxtLink>
         <div class="flex justify-center">
           <p class="text-xs m-2 text-center mx-auto w-2/3">
             Jl. Batu Belig No. 559, Seminyak, Kerobokan Kelod, Kec. Kuta Utara,
@@ -36,12 +36,12 @@
             :key="'link-' + index"
             class="first:mt-3 last:mb-3 m-2 text-center sm:text-left flex justify-center"
           >
-            <a
+            <NuxtLink
               class="text-sm hover:underline underline-offset-8"
-              :href="pageLink.link"
+              :to="pageLink.link"
             >
               {{ pageLink.title }}
-            </a>
+            </NuxtLink>
           </li>
         </ul>
       </div>
@@ -59,12 +59,12 @@ export default {
         link: "/contact",
       },
       {
-        title: "About",
-        link: "/about",
+        title: "Blog",
+        link: "/blog",
       },
       {
         title: "Our History",
-        link: "/history",
+        link: "/about",
       },
       {
         title: "Villas",

@@ -56,7 +56,7 @@
       class="w-10/12 mx-auto p-4 my-8 hover:border-4 transition-all hover:border-gray-300 border-white duration-400 rounded-lg"
       v-if="featured"
     >
-      <a :href="`/blog/${featured.slug}`" class="flex flex-row flex-wrap">
+      <NuxtLink :to="`/blog/${featured.slug}`" class="flex flex-row flex-wrap">
         <!-- Feature image -->
         <div class="w-full md:w-1/2 flex align-middle bg-gray-400">
           <img :src="featured.image.url" :alt="featured.image.alt" />
@@ -74,7 +74,7 @@
             v-html="featured.content"
           ></div>
         </div>
-      </a>
+      </NuxtLink>
     </div>
     <!-- Rest of blog titles -->
     <div class="flex flex-row flex-wrap my-6 w-10/12 mx-auto">
@@ -83,7 +83,7 @@
         :key="`blog-tile-${index}`"
         class="w-full sm:w-1/2 xl:w-1/3 hover:border-4 transition-all duration-400 rounded-lg"
       >
-        <a :href="`/blog/${item.slug}`">
+        <NuxtLink :to="`/blog/${item.slug}`">
           <div class="m-4 p-2">
             <img :src="item.image.url" :alt="item.image.alt" />
             <p class="mx-3 mt-4 text-gray-400">{{ item.published }}</p>
@@ -95,7 +95,7 @@
               v-html="item.content"
             ></div>
           </div>
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </div>

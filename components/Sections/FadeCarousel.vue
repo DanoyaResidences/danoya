@@ -87,11 +87,11 @@
         molestias odit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
       <span class="block text-right mt-8">
-        <a
-          href="/villas"
+        <NuxtLink
+          to="/villas"
           class="font-serif tracking-wider link-secondary transition-all duration-300 hover:mr-4 underline hover:link-primary"
-          >Our Villas</a
-        >
+          >Our Villas
+        </NuxtLink>
       </span>
     </div>
   </div>

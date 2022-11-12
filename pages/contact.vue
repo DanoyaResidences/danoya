@@ -1,13 +1,15 @@
 <template>
-  <nav-bar-top />
-  <nav-bar-bottom />
-  <TopParallax
-    heading="Contact"
-    subHeading="Reach out to us"
-    imagePath="/images/headers/contact_parallax.jpeg"
-  />
-  <contact-form />
-  <Footer />
+  <div>
+    <nav-bar-top />
+    <nav-bar-bottom />
+    <TopParallax
+      heading="Contact"
+      subHeading="Reach out to us"
+      imagePath="/images/headers/contact_parallax.jpeg"
+    />
+    <contact-form />
+    <Footer />
+  </div>
 </template>
 
 <script>

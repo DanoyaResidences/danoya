@@ -12,13 +12,13 @@
     >
       <ul class="space-y-2">
         <li v-for="(navLink, index) in navLinks" :key="'sidebar-' + index">
-          <a
-            :href="navLink.href"
+          <NuxtLink
+            :to="navLink.href"
             class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <i :class="navLink.iconClass" aria-hidden="true"></i>
             <span class="ml-3">{{ navLink.linkName }}</span>
-          </a>
+          </NuxtLink>
         </li>
       </ul>
     </div>
