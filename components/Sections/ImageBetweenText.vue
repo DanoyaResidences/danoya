@@ -37,8 +37,10 @@
             >
               ←
             </button>
-            <div class="text-center w-1/2 mt-1">
-              <p>{{ galleryCounter + 1 }} | {{ content.team.length }}</p>
+            <div class="text-center w-1/2 flex align-middle">
+              <p class="my-auto mx-auto">
+                {{ galleryCounter + 1 }} | {{ content.team.length }}
+              </p>
             </div>
             <button
               class="hover:bg-gray-400 w-1/4 h-10 transition-all duration-100"
