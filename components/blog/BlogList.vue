@@ -7,7 +7,6 @@
     <div class="flex flex-row w-full md:w-60 mx-auto">
       <div class="w-1/4">
         <!-- reverse button (disabled if at 1) -->
-
         <button
           :class="
             currentPage == 1
