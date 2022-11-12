@@ -63,7 +63,7 @@ export default {
         link: "/blog",
       },
       {
-        title: "Our History",
+        title: "About",
         link: "/about",
       },
       {

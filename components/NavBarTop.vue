@@ -90,6 +90,11 @@ export default {
         linkName: "Our Villas",
         iconClass: "fa fa-building",
       },
+      {
+        href: "/blog",
+        linkName: "Blog",
+        iconClass: "fa fa-book",
+      },
     ];
 
     // Toggles sidebar
