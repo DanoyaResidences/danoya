@@ -10,7 +10,7 @@
       </h2>
       <!-- Content -->
       <div
-        class="flex h-full flex-col text-sm line leading-7 md:leading-9 mx-4 tracking-wide"
+        class="flex h-full flex-col text-sm line leading-7 md:leading-9 mx-4 tracking-wide textContent"
         v-html="content.text"
       ></div>
     </div>
@@ -30,4 +30,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.textContent p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .textContent p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+</style>
