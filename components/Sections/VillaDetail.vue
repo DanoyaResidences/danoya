@@ -49,39 +49,65 @@
             class="w-full md:h-[500px] h-96 bg-gray-200 object-cover"
           />
         </div>
-        <!-- Gallery buttons -->
-        <div
-          class="bg-gray-100 mt-1 md:w-1/4 w-full ml-auto h-10 flex align-middle rounded-md"
-        >
-          <div class="flex flex-row w-full">
-            <button
-              class="w-1/4 hover:bg-gray-200 rounded-l-md"
-              @click="
-                modifyGalleryCounterForVilla(item.name, -1, item.images.length)
-              "
+        <!-- Feature video and gallery button section -->
+        <div class="flex flex-row md:flex-wrap flex-wrap-reverse">
+          <!-- Feature video -->
+          <div class="md:w-1/4 w-full mt-1 cursor-pointer group">
+            <!-- Icon -->
+            <i
+              class="fa fa-video-camera mr-2 group-hover:text-blue-300"
+              aria-hidden="true"
+            ></i>
+            <!-- Video Modal button -->
+            <div
+              type="button"
+              class="inline-block text-black font-medium text-xs leading-tight uppercase transition-all duration-300 ease-in-out group-hover:underline"
+              data-bs-toggle="modal"
+              data-bs-target="#videoModal"
+              @click="setActiveVideoAndTitle(item.featureVideo, item.name)"
             >
-              ←
-            </button>
-            <div class="w-2/4 text-center my-auto">
-              {{ getGalleryCounterForType(item.name) + 1 }} /
-              {{ item.images.length }}
+              Feature Video
             </div>
-            <button
-              class="w-1/4 hover:bg-gray-200 rounded-r-md"
-              @click="
-                modifyGalleryCounterForVilla(item.name, 1, item.images.length)
-              "
-            >
-              →
-            </button>
+          </div>
+          <!-- Gallery buttons -->
+          <div
+            class="bg-gray-100 mt-1 md:w-1/4 w-full ml-auto h-10 flex align-middle rounded-md"
+          >
+            <div class="flex flex-row w-full">
+              <button
+                class="w-1/4 hover:bg-gray-200 rounded-l-md"
+                @click="
+                  modifyGalleryCounterForVilla(
+                    item.name,
+                    -1,
+                    item.images.length
+                  )
+                "
+              >
+                ←
+              </button>
+              <div class="w-2/4 text-center my-auto">
+                {{ getGalleryCounterForType(item.name) + 1 }} /
+                {{ item.images.length }}
+              </div>
+              <button
+                class="w-1/4 hover:bg-gray-200 rounded-r-md"
+                @click="
+                  modifyGalleryCounterForVilla(item.name, 1, item.images.length)
+                "
+              >
+                →
+              </button>
+            </div>
           </div>
         </div>
+
         <!-- Villa content section -->
         <div class="flex flex-row mt-8">
           <!-- Left side: text -->
           <div class="w-full md:w-4/6 md:pr-10">
             <!-- Text description -->
-            <div v-html="item.description" class="leading-loose"></div>
+            <div v-html="item.description" class="villaDescription"></div>
 
             <!-- Features container -->
             <h3 class="pt-6">Features</h3>
@@ -89,7 +115,7 @@
               <li
                 v-for="(icon, iconIndex) in item.featureIcons"
                 :key="item.name + '-icon-' + iconIndex"
-                class="flex flex-row h-12"
+                class="flex flex-row h-12 text-"
               >
                 <!-- Icon -->
                 <div class="w-1/3 text-center mx-auto my-auto">
@@ -117,12 +143,14 @@
         </div>
       </div>
     </div>
+    <widgets-video-modal :activeVideo="activeVideo" :title="modalTitle" />
   </div>
 </template>
 
 <script>
 import AutoCarousel from "../widgets/AutoCarousel.vue";
 import { villaData } from "../../data/data.js";
+import VideoModal from "../widgets/VideoModal.vue";
 
 // Underline all spaces in a string for HTML compatibility
 function underlineAllSpaces(string) {
@@ -139,6 +167,7 @@ const anchorTagYPositions = ref({
   "Royal 3": 0,
   "Royal 2": 0,
 });
+
 // Store current active villa sectino as string
 const currentActiveVillaSection = ref("");
 
@@ -196,6 +225,16 @@ function determineCurrentVillaOnScreen(currentScrollY) {
     lastYAnchorPassed = "Royal 2";
   }
   return lastYAnchorPassed;
+}
+
+// Store active video data to show in modal
+const activeVideo = ref("");
+const modalTitle = ref("");
+
+// Sets active video and title for modal
+function setActiveVideoAndTitle(videoUrl, newTitle) {
+  activeVideo.value = videoUrl;
+  modalTitle.value = newTitle;
 }
 
 export default {
@@ -259,9 +298,17 @@ export default {
       galleryCounters,
       villaDetails,
       currentActiveVillaSection,
+      activeVideo,
+      modalTitle,
+      setActiveVideoAndTitle,
     };
   },
 };
 </script>
 
-<style></style>
+<style>
+.villaDescription p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+</style>
