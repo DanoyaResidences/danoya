@@ -80,6 +80,23 @@
     </div>
 
     <div class="md:w-1/2 w-full mx-auto">
+      <!-- Feature video -->
+      <div class="w-full mt-1 mx-auto cursor-pointer group text-center">
+        <!-- Icon -->
+        <i
+          class="fa fa-video-camera mr-2 group-hover:text-blue-300"
+          aria-hidden="true"
+        ></i>
+        <!-- Video Modal button -->
+        <div
+          type="button"
+          class="inline-block text-black font-medium text-xs leading-tight uppercase transition-all duration-300 ease-in-out group-hover:underline"
+          data-bs-toggle="modal"
+          data-bs-target="#videoModal"
+        >
+          Feature Video
+        </div>
+      </div>
       <p class="md:text-center">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
         sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas
@@ -94,6 +111,10 @@
         </NuxtLink>
       </span>
     </div>
+    <widgets-video-modal
+      activeVideo="https://www.youtube.com/embed/7NoxHTYgVuw"
+      title="Our Villas"
+    />
   </div>
 </template>
 

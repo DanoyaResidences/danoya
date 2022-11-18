@@ -2,10 +2,15 @@
   <div>
     <nav-bar-top />
     <nav-bar-bottom />
-    <TopParallax
+    <!-- <TopParallax
       heading="Home starts here"
       subHeading="Convenience at your fingertips"
       imagePath="/images/headers/home_parallax.jpeg"
+    /> -->
+    <video-parallax
+      heading="Home starts here"
+      subHeading="Convenience at your fingertips"
+      videoPath=""
     />
     <info-section :content="infoSectionText" />
     <!-- <villa-carousel /> -->
@@ -19,12 +24,9 @@
 <script>
 import TextAndGallery from "../components/Sections/TextAndGallery.vue";
 import FadeCarousel from "../components/Sections/FadeCarousel.vue";
-// const { find } = await useStrapi4();
+import VideoParallax from "../components/VideoParallax.vue";
 
-// const { find } = useStrapi();
-// const response = await find("products");
-// console.log("response: ", response);
-
+// Text data
 const infoSectionText = {
   title: "The title",
   text: `<p
@@ -112,6 +114,7 @@ export default {
   components: {
     TextAndGallery,
     FadeCarousel,
+    VideoParallax,
   },
   setup() {
     return {
