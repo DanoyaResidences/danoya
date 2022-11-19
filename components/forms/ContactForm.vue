@@ -121,16 +121,18 @@
           <div class="text-center pt-1 pb-1 sm:w-1/2 w-full my-auto">
             <button
               @click="submitForm()"
-              :class="
-                isFormValid
-                  ? 'inline-block px-6 py-2.5 hover:text-white text-gray-400 font-medium text-xs leading-tight uppercase rounded-md shadow-md hover:bg-blue-300 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full md:w-2/3 mb-3 border-2'
-                  : 'inline-block px-6 py-2.5 hover:text-white text-gray-400 font-medium text-xs leading-tight uppercase rounded-md shadow-md hover:bg-red-300 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full md:w-2/3 mb-3 border-2'
-              "
+              :class="buttonClassBasedOnForm"
               type="button"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
             >
-              Submit
+              <i
+                v-if="loading"
+                :class="'text-blue-400 fa fa-lg fa-spinner animate-spin'"
+              ></i>
+              <div v-if="!loading">
+                {{ submitButtonText }}
+              </div>
             </button>
           </div>
         </div>
@@ -141,6 +143,7 @@
 
 <script>
 import validation from "./validation";
+import axios from "axios";
 export default {
   setup() {
     // Variable to record form input
@@ -170,6 +173,9 @@ export default {
       message: "",
     });
 
+    // Submit button text
+    const submitButtonText = ref("submit");
+
     // Computed properties
     //
     // Current message count
@@ -193,6 +199,51 @@ export default {
 
     // Functions
     //
+    const loading = ref(false);
+    // Submits form
+    async function postFormToFormspree() {
+      loading.value = true;
+      // Call api
+      const response = await axios.post("https://formspree.io/f/xdojjoko", {
+        name: form.value.name,
+        email: form.value.email,
+        phone: form.value.phone,
+        purpose: form.value.purpose,
+        message: form.value.message,
+        _subject: `${form.value.purpose} | Message from Danoya website`,
+        _replyto: form.value.email,
+        _name: form.value.firstname,
+      });
+
+      if (response.status === 200) {
+        // Reset form
+        form.value.name = "";
+        form.value.email = "";
+        form.value.phone = "";
+        form.value.purpose = "";
+        form.value.message = "";
+
+        // Stop loading
+        loading.value = false;
+        // Set message
+        messageButtonMessage("Success!");
+      } else {
+        // Stop loading
+        loading.value = false;
+        // Set message
+        messageButtonMessage("Failed!");
+      }
+    }
+
+    // Set messagebutton text message
+    function messageButtonMessage(text) {
+      // Set new message
+      submitButtonText.value = text;
+      // After 3 seconds set to old message
+      setTimeout(() => {
+        submitButtonText.value = "submit";
+      }, 3000);
+    }
     // Checks whether a field is valid to apply border CSS
     function inputBorderOutlineValidate(field) {
       // If error message empty
@@ -204,10 +255,38 @@ export default {
       }
     }
 
+    // Builds the required button class based on form validity and
+    // whether or not form submission is loading
+    const buttonClassBasedOnForm = computed(() => {
+      // Build base class
+      let cssClass =
+        "inline-block px-6 py-2.5 hover:text-white text-gray-400 font-medium text-xs leading-tight uppercase rounded-md shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full md:w-2/3 mb-3 border-2";
+
+      // Depending on form validity indicate whether valid or not
+      if (!isFormValid.value) {
+        // Indicate invalid
+        cssClass = cssClass + " hover:bg-red-300";
+      } else {
+        // Indicate valid
+        cssClass = cssClass + " hover:bg-blue-300";
+      }
+
+      // If it's loading add different background
+      if (loading.value) {
+        cssClass = cssClass + " bg-blue-300";
+      }
+
+      return cssClass;
+    });
+
     // Submission click handler for form submission
-    function submitForm() {
+    async function submitForm() {
       // Validate all the fields
       validateAllFields();
+      if (isFormValid.value) {
+        // post to server
+        await postFormToFormspree();
+      }
     }
 
     // Validates the specified name of the field within the contact form
@@ -244,6 +323,9 @@ export default {
       currentMessageCount,
       isFormValid,
       inputBorderOutlineValidate,
+      submitButtonText,
+      loading,
+      buttonClassBasedOnForm,
     };
   },
 };
