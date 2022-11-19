@@ -22,8 +22,21 @@ export default {
     let blogList = ref([]);
 
     try {
+      // Retrieve blog and blog list
       await retrieveBlogArticle();
       await retrieveBlogs();
+
+      if (blogArticle.value.metaDescription !== null) {
+        // set head
+        useHead({
+          meta: [
+            {
+              name: "description",
+              content: blogArticle.value.metaDescription,
+            },
+          ],
+        });
+      }
     } catch (error) {
       console.error("error with API call: ", error);
     }
@@ -36,6 +49,7 @@ export default {
       // Set as ref variable
       blogArticle.value = response.data.attributes;
     }
+    console.log("blogArticle.value: ", blogArticle.value);
 
     // Makes an API call to retrieve blogs for current page
     async function retrieveBlogs() {

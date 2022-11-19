@@ -117,6 +117,15 @@ export default {
     VideoParallax,
   },
   setup() {
+    useHead({
+      meta: [
+        {
+          name: "description",
+          content:
+            "Danoya Private Luxury residences are a villa complex located in Seminyak, Bali.  Situated in between the bustling areas of Seminyak and Canggu/Berawa",
+        },
+      ],
+    });
     return {
       infoSectionText,
       ourLocationText,

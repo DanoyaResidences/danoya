@@ -139,7 +139,7 @@ export default {
       meta: [
         {
           name: "description",
-          content: "Danoya is a villa complex located in Seminyak, Bali.",
+          content: "Danoya about us and our history.",
         },
       ],
     });

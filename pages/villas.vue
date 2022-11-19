@@ -43,6 +43,15 @@ export default {
     OurServices,
   },
   setup() {
+    useHead({
+      meta: [
+        {
+          name: "description",
+          content:
+            "At Danoya we have a wide selection of villas fit for every type of guest. There are two primary categories of villas: Imperial and Royal",
+        },
+      ],
+    });
     return {
       infoSectionText,
     };
