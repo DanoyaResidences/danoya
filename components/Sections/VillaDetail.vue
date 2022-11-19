@@ -52,7 +52,10 @@
         <!-- Feature video and gallery button section -->
         <div class="flex flex-row md:flex-wrap flex-wrap-reverse">
           <!-- Feature video -->
-          <div class="md:w-1/4 w-full mt-1 cursor-pointer group">
+          <div
+            v-if="item.featureVideo !== ''"
+            class="md:w-1/4 w-full mt-1 cursor-pointer group"
+          >
             <!-- Icon -->
             <i
               class="fa fa-video-camera mr-2 group-hover:text-blue-300"
