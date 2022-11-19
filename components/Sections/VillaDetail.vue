@@ -58,7 +58,7 @@
           >
             <!-- Icon -->
             <i
-              class="fa fa-video-camera mr-2 group-hover:text-blue-300"
+              class="fa fa-video-camera mr-2 group-hover:text-blue-300 transition-all duration-75"
               aria-hidden="true"
             ></i>
             <!-- Video Modal button -->
