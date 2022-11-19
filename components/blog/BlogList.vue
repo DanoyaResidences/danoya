@@ -3,8 +3,13 @@
     <!-- Title -->
     <h1 class="text-3xl md:text-7xl mx-4 mt-8 font-serif">Beachside</h1>
     <span class="mx-6">A blog by Danoya</span>
+
+    <!-- Placeholder if no articles found -->
+    <div v-if="!blogs.length > 0" class="text-center my-20">
+      No blog articles found
+    </div>
     <!-- Pagination control -->
-    <div class="flex flex-row w-full md:w-60 mx-auto">
+    <div class="flex flex-row w-full md:w-60 mx-auto" v-if="blogs.length > 0">
       <div class="w-1/4">
         <!-- reverse button (disabled if at 1) -->
         <button
@@ -76,8 +81,11 @@
         </div>
       </NuxtLink>
     </div>
-    <!-- Rest of blog titles -->
-    <div class="flex flex-row flex-wrap my-6 w-10/12 mx-auto">
+    <!-- Rest of blog tiles -->
+    <div
+      class="flex flex-row flex-wrap my-6 w-10/12 mx-auto"
+      v-if="blogTiles.length > 0"
+    >
       <div
         v-for="(item, index) in blogTiles"
         :key="`blog-tile-${index}`"
@@ -203,44 +211,47 @@ export default {
     function processBlogTileArray() {
       // Reset current blog tiles
       blogTiles.value = [];
-      // Iterate through data and Extract required information
-      props.blogs.forEach((element) => {
-        // extract text content
-        let textContent = element.attributes.content;
-        // As long as the text content isn't null
-        if (textContent != null) {
-          // convert to html and grab first 200 chars
-          textContent = marked.parse(textContent).slice(0, 199);
-          // Remove the tags to generate a clean synopsis
-          textContent = textContent.replace(
-            /<(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+>/g,
-            ""
-          );
-        }
-        // Extract image details
-        const imageDetails = buildImageDetailsIfAvailable(element);
-        // push to blog tiles array
-        blogTiles.value.push({
-          title: element.attributes.title,
-          // Store converted text in content
-          content: textContent + "...",
-          published: moment(element.attributes.publishedAt).format(
-            "MMMM Do YYYY"
-          ),
-          slug: element.attributes.slug,
-          // handle image if present
-          image: imageDetails,
+
+      if (props.blogs) {
+        // Iterate through data and Extract required information
+        props.blogs.forEach((element) => {
+          // extract text content
+          let textContent = element.attributes.content;
+          // As long as the text content isn't null
+          if (textContent != null) {
+            // convert to html and grab first 200 chars
+            textContent = marked.parse(textContent).slice(0, 199);
+            // Remove the tags to generate a clean synopsis
+            textContent = textContent.replace(
+              /<(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+>/g,
+              ""
+            );
+          }
+          // Extract image details
+          const imageDetails = buildImageDetailsIfAvailable(element);
+          // push to blog tiles array
+          blogTiles.value.push({
+            title: element.attributes.title,
+            // Store converted text in content
+            content: textContent + "...",
+            published: moment(element.attributes.publishedAt).format(
+              "MMMM Do YYYY"
+            ),
+            slug: element.attributes.slug,
+            // handle image if present
+            image: imageDetails,
+          });
         });
-      });
 
-      // if on first page,
-      if (props.currentPage == 1) {
-        // Remove most recent item and set as featured
-        featured.value = blogTiles.value.pop();
+        // if on first page,
+        if (props.currentPage == 1) {
+          // Remove most recent item and set as featured
+          featured.value = blogTiles.value.pop();
 
-        // Else make an empty object
-      } else {
-        featured.value = false;
+          // Else make an empty object
+        } else {
+          featured.value = false;
+        }
       }
 
       // Reverse array to make from newest to oldest

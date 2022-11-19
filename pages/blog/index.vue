@@ -23,7 +23,7 @@ export default {
     // For Strapi DB access
     const { find } = useStrapi();
     // Init vars
-    const blogs = ref([{}]);
+    const blogs = ref([]);
     const pagination = ref({});
     const currentPage = ref(1);
 
@@ -31,7 +31,7 @@ export default {
     try {
       await retrieveBlogs();
     } catch (error) {
-      console.error("error: ", error);
+      console.error("Failed to retrieve blogs: ", error);
     }
 
     // Makes an API call to retrieve blogs for current page

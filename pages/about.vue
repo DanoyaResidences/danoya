@@ -133,7 +133,16 @@ export default {
     TextAndGallery,
     ImageBetweenText,
   },
+
   setup() {
+    useHead({
+      meta: [
+        {
+          name: "description",
+          content: "Danoya is a villa complex located in Seminyak, Bali.",
+        },
+      ],
+    });
     return {
       topSectionText,
       textAndGalleryText,

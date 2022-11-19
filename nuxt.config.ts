@@ -13,4 +13,9 @@ export default defineNuxtConfig({
     cookie: {},
     cookieName: "strapi_jwt",
   },
+  head: {
+    title: "Danoya Private Luxury Residences",
+    meta: [],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+  },
 });
