@@ -6,7 +6,7 @@ export const villaData = [
     area: "240-277m²",
     featureVideo: "https://www.youtube.com/embed/czzY96lr-WA",
     description:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
+      "<p>Our most popular villa features an uncluttered aesthetic and can comfortably accommodate a total of 6 guests across its three bedrooms, all of which are furnished with king size beds.</p>",
     images: [
       {
         src: "images/villas/Grand_Imperial/carousel/GI1_web.jpeg",
@@ -80,6 +80,10 @@ export const villaData = [
         type: "fa fa-bath fa-2x",
         text: "2x Bathtub",
       },
+      {
+        type: "fa fa-wheelchair fa-2x",
+        text: "2x Bedrooms upstairs",
+      },
     ],
   },
   //   Imperial 3
@@ -89,7 +93,7 @@ export const villaData = [
     area: "318m²",
     featureVideo: "",
     description:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
+      "<p>This three-bedroom villa is embellished in Balinese style and features wooden architecture.  It offers you a home sanctuary during your vacation throughout the bedrooms and outdoor living spaces.</p>",
     images: [
       {
         src: "images/villas/Imperial_3/carousel/Imp3_1_web.jpeg",
@@ -159,6 +163,10 @@ export const villaData = [
         type: "fa fa-bath fa-2x",
         text: "1x Bathtub",
       },
+      {
+        type: "fa fa-wheelchair fa-2x",
+        text: "2x Bedrooms upstairs",
+      },
     ],
   },
   //   Imperial 2
@@ -168,7 +176,7 @@ export const villaData = [
     area: "170m²",
     featureVideo: "https://www.youtube.com/embed/pwSqmwMbQtg",
     description:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
+      "<p>The Imperial 2 features two large bedrooms, each of which is outfitted with a television, air-conditioning, a king-size bed and indoor living area; allowing you to recharge and rejuvenate in complete privacy and comfort following a day of exploration. </p>",
     images: [
       {
         src: "images/villas/Imperial_2/carousel/Imp2_1_web.jpeg",
@@ -234,6 +242,10 @@ export const villaData = [
         type: "fa fa-bath fa-2x",
         text: "1x Bathtub",
       },
+      {
+        type: "fa fa-wheelchair fa-2x",
+        text: "Bedrooms upstairs",
+      },
     ],
   },
   //   Imperial 1
@@ -243,7 +255,7 @@ export const villaData = [
     area: "100m²",
     featureVideo: "https://www.youtube.com/embed/7DR1oWnR9SU",
     description:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
+      "<p>Without compromising your comfort, this villa provides you with a private, one-bedroom solitary with a separate indoor living area that is completely yours.</p>",
     images: [
       {
         src: "images/villas/Imperial_1/carousel/Imp1_1_web.jpeg",
@@ -293,6 +305,10 @@ export const villaData = [
         type: "fa fa-bath fa-2x",
         text: "1x Bathtub",
       },
+      {
+        type: "fa fa-wheelchair fa-2x",
+        text: "Bedroom upstairs",
+      },
     ],
   },
   //   Royal 5
@@ -302,7 +318,7 @@ export const villaData = [
     area: "300m²",
     featureVideo: "https://www.youtube.com/embed/NiA-SfY10aQ",
     description:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
+      "<p>Intentionally designed for relaxation, this villa can accomodate large families or groups of friends with enough space for everyone to unwind.</p><p>With its sprawling living area, this villa is ideal for hosting small gatherings.</p>",
     images: [
       {
         src: "images/villas/Royal_5/carousel/Royal5_1_web.jpeg",
@@ -360,6 +376,10 @@ export const villaData = [
         type: "fa fa-bath fa-2x",
         text: "2x Bathtub",
       },
+      {
+        type: "fa fa-wheelchair fa-2x",
+        text: "Bedrooms upstairs",
+      },
     ],
   },
   //   Royal 3
@@ -369,7 +389,7 @@ export const villaData = [
     area: "187m²",
     featureVideo: "https://www.youtube.com/embed/XwDCw_LONzg",
     description:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
+      "<p>There is plenty of room for everyone to enjoy themselves in this villa's air-conditioned indoor living room, so it's an excellent choice for a family getaway.  A total of three-bedrooms are available in the villa, two of which are furnished with king-size bends and one with a queen-size bed.  Both rooms are furnished with their own air-conditioning and TV.</p>",
     images: [
       {
         src: "images/villas/Royal_3/carousel/Royal3_1_web.jpeg",
@@ -439,6 +459,10 @@ export const villaData = [
         type: "fa fa-bath fa-2x",
         text: "1x Bathtub",
       },
+      {
+        type: "fa fa-wheelchair fa-2x",
+        text: "Bedrooms upstairs",
+      },
     ],
   },
   //   Royal 2
@@ -448,7 +472,7 @@ export const villaData = [
     area: "96m²",
     featureVideo: "https://www.youtube.com/embed/3ylwNbag1SY",
     description:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic ipsum assumenda quaerat laudantium ea quos vel aliquam. Illo adipisci harum eius eaque tempora necessitatibus repudiandae sint doloremque deserunt? Explicabo!</p>",
+      "<p>This tastefully designed villa is equipped with two bedrooms and an enclosed living area, all of which have air-conditioning and TV.  It has the capacity to accommodate up to 4 people while still maintaining a spacious atmosphere.</p>",
     images: [
       {
         src: "images/villas/Royal_2/carousel/Royal2_1_web.jpeg",
@@ -497,6 +521,10 @@ export const villaData = [
       {
         type: "fa fa-bath fa-2x",
         text: "1x Bathtub",
+      },
+      {
+        type: "fa fa-wheelchair fa-2x",
+        text: "Bedrooms upstairs",
       },
     ],
   },

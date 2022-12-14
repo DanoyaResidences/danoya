@@ -5,10 +5,7 @@
     </h2>
     <!-- First row of image and content -->
     <div class="flex flex-row align-middle flex-wrap">
-      <div
-        class="w-full md:w-5/12 my-auto text-sm leading-7 tracking-widest mb-10 px-2"
-        v-html="content.topText"
-      ></div>
+      <div class="w-full md:w-5/12 my-auto px-2" v-html="content.topText"></div>
       <div class="mb-10 mt-4 md:mb-0 w-full md:w-7/12 flex align-bottom">
         <img
           class="object-cover"
@@ -16,7 +13,7 @@
           alt=""
         />
         <!-- Gallery button box -->
-        <div class="absolute bg-gray-200 flex flex-col w-12">
+        <div class="absolute bg-gray-200 flex-col w-12 hidden md:flex">
           <button
             class="hover:bg-gray-400 h-10 transition-all duration-100"
             @click="modifygalleryCounter(-1)"
@@ -45,7 +42,7 @@
         <img class="object-cover" :src="content.bottomImage" alt="" />
       </div>
       <div
-        class="w-full md:w-1/2 my-auto text-sm leading-7 tracking-widest px-2"
+        class="w-full md:w-1/2 my-auto px-2"
         v-html="content.bottomText"
       ></div>
     </div>

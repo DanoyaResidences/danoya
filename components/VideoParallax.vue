@@ -6,7 +6,7 @@
         autoplay
         muted
         loop
-        class="absolute -z-30 min-w-full h-[80vh] md:min-h-full max-w-none object-fill"
+        class="absolute -z-30 min-w-full h-[80vh] md:h-full max-w-none object-fill"
       >
         <!-- Show different source based on screen size -->
         <source v-if="videoToShow !== ''" :src="videoToShow" type="video/mp4" />
@@ -15,7 +15,7 @@
       <div class="w-full h-full bg-gray-700 opacity-70 flex justify-center">
         <h1
           style="line-height: 70px"
-          class="my-auto text-3xl sm:text-4xl text-center text-white font-theme-font"
+          class="my-auto text-xl sm:text-4xl text-center text-white font-theme-font md:w-1/2"
         >
           <span
             style="line-height: 30px"

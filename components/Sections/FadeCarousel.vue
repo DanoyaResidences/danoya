@@ -97,19 +97,22 @@
           Feature Video
         </div>
       </div>
-      <p class="md:text-center">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-        sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas
-        itaque quidem. Tenetur quo, iusto laudantium molestiae animi odio quasi
-        molestias odit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
-      <span class="block text-right mt-8">
-        <NuxtLink
-          to="/villas"
-          class="font-serif tracking-wider link-secondary transition-all duration-300 hover:mr-4 underline hover:link-primary"
-          >Our Villas
-        </NuxtLink>
-      </span>
+      <div class="w-10/12 mx-auto">
+        <p class="md:text-center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+          sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas
+          itaque quidem. Tenetur quo, iusto laudantium molestiae animi odio
+          quasi molestias odit. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+        </p>
+        <span class="block text-right mt-8">
+          <NuxtLink
+            to="/villas"
+            class="font-serif tracking-wider link-secondary transition-all duration-300 hover:mr-4 underline hover:link-primary"
+            >Our Villas
+          </NuxtLink>
+        </span>
+      </div>
     </div>
     <widgets-video-modal
       activeVideo="https://www.youtube.com/embed/7NoxHTYgVuw"

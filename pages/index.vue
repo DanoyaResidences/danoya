@@ -9,7 +9,7 @@
     /> -->
     <video-parallax
       heading="Home starts here"
-      subHeading="Convenience at your fingertips"
+      subHeading="Welcome to Danoya Private Luxury Residences"
       videoPath=""
     />
     <info-section :content="infoSectionText" />
@@ -28,19 +28,12 @@ import VideoParallax from "../components/VideoParallax.vue";
 
 // Text data
 const infoSectionText = {
-  title: "The title",
+  title: "Welcome to Danoya",
   text: `<p
           class="md:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-widest"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-          sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas
-          itaque quidem. Tenetur quo, iusto laudantium molestiae animi odio
-          quasi molestias odit. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Amet eos quaerat maiores ipsa aliquid sequi
-          asperiores at illo corporis numquam. Ad saepe voluptatibus aut a porro
-          veritatis dolorem quo rem.
-        </p>
-        <span class="mt-8 ml-4">- Danoya's History</span>`,
+          Danoya Residences is a luxurious private villa complex in Bali that features opulent and roomy accommodations nestled in Batu Belig.  We are here to provide you with the ideal stay so that you can make the most of your time in Bali, whether you're traveling solo or with family and friends.
+        </p>`,
   imageSrc: "/images/art/villa-art_2_md.jpeg",
 };
 
@@ -49,20 +42,14 @@ const ourLocationText = {
   text: `<p
           class="md:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-widest"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-          sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas
-          itaque quidem. Tenetur quo, iusto laudantium molestiae animi odio
-          quasi molestias odit. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Amet eos quaerat maiores ipsa aliquid sequi
-          asperiores at illo corporis numquam. Ad saepe voluptatibus aut a porro
-          veritatis dolorem quo rem.
+          Danoya Private Luxury Residences' prime location is within short driving distance of popular attractions like Kuta Beach, Canggu, and Seminyak Shopping Centre. Guests will have ease getting around with plenty of time to explore.
         </p>
-        <span class="mt-8 ml-4">- Danoya's History</span>`,
+        `,
   imageSrc: "/images/art/villa-art_2_md.jpeg",
 };
 
 const textAndGalleryText = {
-  title: `The Title`,
+  title: `Home Away From Home`,
   gallery: [
     {
       src: "images/spirit/spirit_1_web.jpeg",
@@ -77,35 +64,16 @@ const textAndGalleryText = {
       alt: "",
     },
   ],
-  topText: `<p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
-          officia consequatur, labore voluptatibus reprehenderit corporis porro
-          voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
-          repudiandae quo? Consectetur.
+  topText: `<p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest md:mb-10">
+          Our 20 luxurious villas are a seamless blend of Mediterranean and tropical design with a nod to traditional Balinese aesthetics and beautifully designed open floor plans and enclosed living area, all come complete with kitchens and private pools.
+        </p>
+        `,
+  bottomText: `<p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest">
+          With experience spanning more than 15 years, we take pride in giving you an unforgettable experience. Providing you with convenience and relaxation...
         </p>
         <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
-          officia consequatur, labore voluptatibus reprehenderit corporis porro.
-        </p>
-        <br />
-        <NuxtLink
-          class="font-serif tracking-wider link-secondary transition-all duration-300 hover:ml-4 underline hover:link-primary"
-          to="/about"
-          >Learn More</NuxtLink
-        >`,
-  bottomText: `<p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
-          officia consequatur, labore voluptatibus reprehenderit corporis porro
-          voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
-          repudiandae quo? Consectetur.
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
-          officia consequatur, labore voluptatibus reprehenderit corporis porro
-          voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
-          repudiandae quo? Consectetur.
+        <p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest">
+         We are truly your home away from home.
         </p>`,
   bottomImage: "images/villas/Grand_Imperial/carousel/GI1_web.jpeg",
 };
@@ -122,7 +90,7 @@ export default {
         {
           name: "description",
           content:
-            "Danoya Private Luxury residences are a villa complex located in Seminyak, Bali.  Situated in between the bustling areas of Seminyak and Canggu/Berawa",
+            "Danoya Private Luxury residences is a villa complex located in Seminyak, Bali.  Situated in between the bustling areas of Seminyak and Canggu/Berawa",
         },
       ],
     });

@@ -9,7 +9,7 @@
       <div class="w-full h-full bg-gray-700 opacity-70 flex justify-center">
         <h1
           style="line-height: 70px"
-          class="my-auto text-3xl sm:text-4xl text-center text-white font-theme-font"
+          class="my-auto text-xl sm:text-4xl text-center text-white font-theme-font"
         >
           <span
             style="line-height: 30px"

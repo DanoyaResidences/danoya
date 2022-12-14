@@ -20,19 +20,13 @@ import VillaDetail from "../components/Sections/VillaDetail.vue";
 import AutoCarousel from "../components/widgets/AutoCarousel.vue";
 
 const infoSectionText = {
-  title: "Villa title",
+  title: "Our Villas",
   text: `<p
           class="font-serif text-sm md:text-md line leading-7 md:leading-9 mx-4 tracking-wide"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-          sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas
-          itaque quidem. Tenetur quo, iusto laudantium molestiae animi odio
-          quasi molestias odit. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Amet eos quaerat maiores ipsa aliquid sequi
-          asperiores at illo corporis numquam. Ad saepe voluptatibus aut a porro
-          veritatis dolorem quo rem.
+         Your stay in Bali will feel even more convenient with our fully furnished kitchens and private swimming pools that come standard in each of our villas.
         </p>
-        <span class="mt-8 ml-4">- Danoya's History</span>`,
+        `,
   imageSrc: "/images/art/villa-art_1_md.jpeg",
 };
 
