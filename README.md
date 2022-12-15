@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Danoya Website
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+## Technologies
+
+-Nuxt3: Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup
 

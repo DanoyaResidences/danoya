@@ -70,7 +70,7 @@ export const villaData = [
     featureIcons: [
       {
         type: "fa fa-bed fa-2x",
-        text: "3 x King",
+        text: "3x King",
       },
       {
         type: "fa fa-home fa-2x",
@@ -81,8 +81,8 @@ export const villaData = [
         text: "2x Bathtub",
       },
       {
-        type: "fa fa-wheelchair fa-2x",
-        text: "2x Bedrooms upstairs",
+        type: "fa fa-info-circle fa-2x",
+        text: "1 Bedroom downstairs",
       },
     ],
   },
@@ -153,7 +153,7 @@ export const villaData = [
     featureIcons: [
       {
         type: "fa fa-bed fa-2x",
-        text: "3 x King",
+        text: "3x King",
       },
       {
         type: "fa fa-home fa-2x",
@@ -164,8 +164,8 @@ export const villaData = [
         text: "1x Bathtub",
       },
       {
-        type: "fa fa-wheelchair fa-2x",
-        text: "2x Bedrooms upstairs",
+        type: "fa fa-info-circle fa-2x",
+        text: "1 Bedroom downstairs",
       },
     ],
   },
@@ -243,8 +243,8 @@ export const villaData = [
         text: "1x Bathtub",
       },
       {
-        type: "fa fa-wheelchair fa-2x",
-        text: "Bedrooms upstairs",
+        type: "fa fa-info-circle fa-2x",
+        text: "All bedrooms upstairs",
       },
     ],
   },
@@ -306,7 +306,7 @@ export const villaData = [
         text: "1x Bathtub",
       },
       {
-        type: "fa fa-wheelchair fa-2x",
+        type: "fa fa-info-circle fa-2x",
         text: "Bedroom upstairs",
       },
     ],
@@ -366,7 +366,7 @@ export const villaData = [
     featureIcons: [
       {
         type: "fa fa-bed fa-2x",
-        text: "3 x King / 1x Queen / 1x Twin",
+        text: "3x King / 1x Queen / 1x Twin",
       },
       {
         type: "fa fa-home fa-2x",
@@ -377,8 +377,8 @@ export const villaData = [
         text: "2x Bathtub",
       },
       {
-        type: "fa fa-wheelchair fa-2x",
-        text: "Bedrooms upstairs",
+        type: "fa fa-info-circle fa-2x",
+        text: "All bedrooms upstairs",
       },
     ],
   },
@@ -460,8 +460,8 @@ export const villaData = [
         text: "1x Bathtub",
       },
       {
-        type: "fa fa-wheelchair fa-2x",
-        text: "Bedrooms upstairs",
+        type: "fa fa-info-circle fa-2x",
+        text: "All bedrooms upstairs",
       },
     ],
   },
@@ -523,8 +523,8 @@ export const villaData = [
         text: "1x Bathtub",
       },
       {
-        type: "fa fa-wheelchair fa-2x",
-        text: "Bedrooms upstairs",
+        type: "fa fa-info-circle fa-2x",
+        text: "All bedrooms upstairs",
       },
     ],
   },

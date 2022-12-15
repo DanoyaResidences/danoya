@@ -63,7 +63,7 @@ export default {
       {
         icon: "fa fa-motorcycle fa-lg",
         heading: "Scooter Rental",
-        text: "Offering a wide selection",
+        text: "We offer a wide selection",
       },
       {
         icon: "fa fa-info fa-lg",
