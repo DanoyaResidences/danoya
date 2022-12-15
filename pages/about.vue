@@ -38,15 +38,15 @@ const textAndGalleryText = {
   title: ``,
   gallery: [
     {
-      src: "images/spirit/spirit_1_web.jpeg",
+      src: "images/about/Slide_1.jpeg",
       alt: "",
     },
     {
-      src: "images/spirit/spirit_2_web.jpeg",
+      src: "images/about/Slide_2.jpeg",
       alt: "",
     },
     {
-      src: "images/spirit/spirit_3_web.jpeg",
+      src: "images/about/Slide_3.jpeg",
       alt: "",
     },
   ],
@@ -65,7 +65,7 @@ const textAndGalleryText = {
         <p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           This style of villa is exceptionally crafted with a modern and minimalistic aesthetic laid out over two levels.  It offers you and your loved ones the utmost comfort, making it an excellent choice for trips with your family.
         </p>`,
-  bottomImage: "images/villas/Grand_Imperial/carousel/GI1_web.jpeg",
+  bottomImage: "images/spirit/Spirit_1_web.jpeg",
 };
 
 const ourTeamContent = {

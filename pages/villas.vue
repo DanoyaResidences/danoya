@@ -27,7 +27,7 @@ const infoSectionText = {
          Your stay in Bali will feel even more convenient with our fully furnished kitchens and private swimming pools that come standard in each of our villas.
         </p>
         `,
-  imageSrc: "/images/art/villa-art_1_md.jpeg",
+  imageSrc: "/images/our-villas/Our_villas_header.jpeg",
 };
 
 export default {

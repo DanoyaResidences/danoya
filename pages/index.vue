@@ -34,7 +34,7 @@ const infoSectionText = {
         >
           Danoya Residences is a luxurious private villa complex in Bali that features opulent and roomy accommodations nestled in Batu Belig.  We are here to provide you with the ideal stay so that you can make the most of your time in Bali, whether you're traveling solo or with family and friends.
         </p>`,
-  imageSrc: "/images/art/villa-art_2_md.jpeg",
+  imageSrc: "/images/home/Welcome.jpeg",
 };
 
 const ourLocationText = {
