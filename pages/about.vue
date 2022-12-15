@@ -31,7 +31,7 @@ const topSectionText = {
           Our goal was to grow both in size and in quality and we accomplished this in 2009 with the construction of seven additional new villa units.
         </p>
         <span class="mt-8 ml-4">- Danoya's History</span>`,
-  imageSrc: "/images/art/villa-art_2_md.jpeg",
+  imageSrc: "/images/about/About_top.jpeg",
 };
 
 const textAndGalleryText = {
