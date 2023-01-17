@@ -53,7 +53,7 @@ export default {
       {
         icon: "fa fa-refresh fa-lg",
         heading: "Laundry",
-        text: "Express 1-day service is also available",
+        text: "Express 1-day service available",
       },
       {
         icon: "fa fa-car fa-lg",

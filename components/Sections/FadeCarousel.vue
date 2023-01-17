@@ -79,7 +79,7 @@
       </button>
     </div>
 
-    <div class="md:w-1/2 w-full mx-auto">
+    <div class="md:w-2/3 w-full mx-auto">
       <!-- Feature video -->
       <div class="w-full mt-1 mx-auto cursor-pointer group text-center">
         <!-- Icon -->
@@ -98,12 +98,14 @@
         </div>
       </div>
       <div class="w-10/12 mx-auto">
-        <p class="md:text-center">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-          sapiente sit, excepturi iste ullam aspernatur fugit deserunt voluptas
-          itaque quidem. Tenetur quo, iusto laudantium molestiae animi odio
-          quasi molestias odit. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit.
+        <p class="text-center text-xs md:text-sm">
+          Our team is dedicated to ensuring that your vacation is as stress-free
+          and enjoyable as possible, and we are always available to assist you
+          with any questions or concerns you may have.
+        </p>
+        <p class="text-center text-xs md:text-sm">
+          So come and stay with us at Danoya Residences and experience the
+          ultimate in relaxation and luxury in beautiful Bali..
         </p>
         <span class="block text-right mt-8">
           <NuxtLink

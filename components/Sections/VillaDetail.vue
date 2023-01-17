@@ -311,7 +311,13 @@ export default {
 
 <style>
 .villaDescription p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+@media only screen and (min-width: 768px) {
+  .villaDescription p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 </style>

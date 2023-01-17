@@ -21,14 +21,14 @@ import ImageBetweenText from "../components/Sections/ImageBetweenText.vue";
 const topSectionText = {
   title: "Our History",
   text: `<p
-          class="md:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-widest"
+          class="md:text-base text-sm line leading-7 md:leading-9 mx-4 tracking-widest"
         >
-          Danoya Private Luxury Residences was built in 2003 and initially consisted of just two separate villa units, one with three bedrooms and the other with two.  
+          Danoya Private Luxury Residences was founded in 2003 with the goal of providing guests with the ultimate in relaxation and luxury.  We started small, with just two separate villa units, one with three bedrooms and the other with two.
         </p>
         <p
-          class="md:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-widest"
+          class="md:text-base text-sm line leading-7 md:leading-9 mx-4 tracking-widest"
         >
-          Our goal was to grow both in size and in quality and we accomplished this in 2009 with the construction of seven additional new villa units.
+         We were determined to grow both in size and in quality, and in 2009 we accomplished this with the construction of seven additional new villa units.
         </p>
         <span class="mt-8 ml-4">- Danoya's History</span>`,
   imageSrc: "/images/about/About_top.jpeg",
@@ -50,31 +50,30 @@ const textAndGalleryText = {
       alt: "",
     },
   ],
-  topText: `<p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest">
-          Danoya continued to grow in 2011 and added 13 more villas, bringing the total number of units to 20.  
-        </p>
-        <br />
-        <p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest md:mb-10">
-        Our villas are split into two types:
+  topText: `<p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
+          In 2011, we added 13 new villas to our selection, bringing the total number of units to 20.  These new villas were designed with the same attention to detail and commitment to quality that have made Danoya a trusted choice for vacationers from around the world.  
         </p>
        `,
-  bottomText: `<p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest">
-          This premium selection, which features luxurious bedrooms and bathrooms, gives you plenty of room to stretch out and unwind after a long day of adventure.
+  bottomText: `<p class="lg:text-lg md:text-md text-sm leading-7 mx-4 tracking-widest">
+          Today, we are proud to offer a wide range of luxurious and well-appointed villas, each of which is equipped with a range of amenities and features to ensure that you have everything you need for a comfortable and enjoyable stay.
         </p>
         <br />
-        <p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest">
-          This style of villa is exceptionally crafted with a modern and minimalistic aesthetic laid out over two levels.  It offers you and your loved ones the utmost comfort, making it an excellent choice for trips with your family.
+        <p class="lg:text-lg md:text-md text-sm leading-7 mx-4 tracking-widest">
+          Whether you're looking for a romantic getaway, a family vacation, or a trip with a group of friends, Danoya has a villa that is sure to meet your needs and exceed your expectations.
+        </p>
+        <p class="lg:text-lg md:text-md text-sm leading-7 mx-4 tracking-widest">
+          Come and experience the ultimate in relaxation and luxury at Danoya Private Luxury Residences.
         </p>`,
   bottomImage: "images/spirit/Spirit_1_web.jpeg",
 };
 
 const ourTeamContent = {
   title: "Our Team",
-  introText: `<p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest">
-          Our team is the secret to our success.
+  introText: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
+          Our hotel team is dedicated to providing exceptional service to every guest that walks through our doors. 
         </p>
-        <p class="lg:text-lg md:text-md text-sm leading-7 md:leading-9 mx-4 tracking-widest">
-          Each member of our staff adds to the diversity of Danoya's composition, enriching the guest experience during their stay.
+        <p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
+          From the front desk to housekeeping, every team member is committed to going above and beyond to ensure that our guests have a comfortable and memorable stay. Their attention to detail and warm approach make our hotel stand out as a top choice for travelers.
         </p>
         `,
   team: [
@@ -82,7 +81,7 @@ const ourTeamContent = {
       name: "Calvin Santoso",
       role: "Resident Manager",
       imageSrc: "images/spirit/spirit_1_web.jpeg",
-      text: `<p >
+      text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
           voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
@@ -93,7 +92,7 @@ const ourTeamContent = {
       name: "Ni Wayan Puryani",
       role: "Accounting Director",
       imageSrc: "images/spirit/spirit_1_web.jpeg",
-      text: `<p>
+      text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
           voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
@@ -104,7 +103,7 @@ const ourTeamContent = {
       name: "Oka Pramana",
       role: "House Keeping Supervisor",
       imageSrc: "images/spirit/spirit_1_web.jpeg",
-      text: `<p>
+      text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
           voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,

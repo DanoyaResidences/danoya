@@ -7,10 +7,10 @@
       <!-- Form -->
       <form class="mt-8 border-2 border-gray-300 rounded-md p-5">
         <p
-          class="mt-10 mb-4 text-xs md:text-base tracking-wider md:tracking-wide"
+          class="mt-10 mb-5 text-xs md:text-sm tracking-wider md:tracking-wide"
         >
           Please provide us your details to get back to you in relation to your
-          query
+          query.
         </p>
 
         <div class="flex flex-row flex-wrap">

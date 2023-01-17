@@ -5,8 +5,14 @@ export const villaData = [
     subText: "Our most premium offering",
     area: "240-277m²",
     featureVideo: "https://www.youtube.com/embed/czzY96lr-WA",
-    description:
-      "<p>Our most popular villa features an uncluttered aesthetic and can comfortably accommodate a total of 6 guests across its three bedrooms, all of which are furnished with king size beds.</p>",
+    description: `<p>Our most popular villa features a clean and uncluttered aesthetic that is sure to appeal to guests looking for a serene and peaceful retreat. This villa can comfortably accommodate a total of 6 guests across its three cozy bedrooms, all of which are furnished with luxurious king size beds. The bedrooms are tastefully decorated with an eye for style and comfort, offering guests a warm and welcoming retreat to call home during their stay.</p>
+      <p>
+      In addition to the comfortable bedrooms, the villa also features a fully equipped kitchen, a bright and
+airy living area, and a private outdoor space, providing guests with all the amenities and comforts of
+home. Whether you're traveling with a large family or a group of friends, this villa is the perfect choice
+for a relaxing and enjoyable vacation.
+      </p>
+      `,
     images: [
       {
         src: "images/villas/Grand_Imperial/carousel/GI1_web.jpeg",
@@ -92,8 +98,19 @@ export const villaData = [
     subText: "Open plan living 3 bedroom",
     area: "318m²",
     featureVideo: "",
-    description:
-      "<p>This three-bedroom villa is embellished in Balinese style and features wooden architecture.  It offers you a home sanctuary during your vacation throughout the bedrooms and outdoor living spaces.</p>",
+    description: `<p>This stunning three-bedroom villa is a true oasis of relaxation and tranquility, offering guests a
+      home sanctuary to escape to during their vacation. Embellished in traditional Balinese style,
+      the villa features beautiful wooden architecture that is both elegant and rustic. The warm and
+      welcoming interiors of the villa are tastefully designed in a style that reflects the culture and
+      history of the region, creating a unique and authentic atmosphere for guests to enjoy.</p>
+      <p>
+      The villa offers a range of indoor and outdoor living spaces, allowing guests to relax and
+unwind in a variety of settings. Each of the three bedrooms is designed with relaxation and
+enjoyment in mind, offering guests a warm and welcoming retreat to call home during their
+stay. With its beautiful design, luxurious amenities, and peaceful setting, this villa is the perfect
+choice for those seeking a truly memorable and rejuvenating vacation experience.
+      </p>
+      `,
     images: [
       {
         src: "images/villas/Imperial_3/carousel/Imp3_1_web.jpeg",
@@ -175,8 +192,16 @@ export const villaData = [
     subText: "Two bedroom",
     area: "170m²",
     featureVideo: "https://www.youtube.com/embed/pwSqmwMbQtg",
-    description:
-      "<p>The Imperial 2 features two large bedrooms, each of which is outfitted with a television, air-conditioning, a king-size bed and indoor living area; allowing you to recharge and rejuvenate in complete privacy and comfort following a day of exploration. </p>",
+    description: `<p>The Imperial 2 is a villa that features two large bedrooms, each of which is designed to provide
+      guests with the utmost in comfort and privacy. The bedrooms are outfitted with a range of
+      modern amenities, including a television, air-conditioning, and a comfortable king-size bed,
+      ensuring that you can relax and recharge in complete comfort.</p>
+      <p>The villa also features an indoor living area, providing guests with a comfortable place to stay.
+      The living area is decorated in a warm and welcoming style, with plush furnishings and an
+      inviting atmosphere. Whether you're traveling with your loved ones or a group of friends, the
+      Imperial 2 is the perfect choice for those seeking a comfortable and luxurious vacation
+      experience.</p>
+      `,
     images: [
       {
         src: "images/villas/Imperial_2/carousel/Imp2_1_web.jpeg",
@@ -254,8 +279,16 @@ export const villaData = [
     subText: "Two bedroom",
     area: "100m²",
     featureVideo: "https://www.youtube.com/embed/7DR1oWnR9SU",
-    description:
-      "<p>Without compromising your comfort, this villa provides you with a private, one-bedroom solitary with a separate indoor living area that is completely yours.</p>",
+    description: `<p>Without compromising your comfort or privacy, this villa provides you with a one-bedroom
+      solitary that is completely yours to enjoy during your stay. The bedroom is tastefully
+      decorated with a comfortable king-size bed and a range of modern amenities, including a
+      television and air-conditioning, to ensure that you can relax and recharge in complete
+      comfort.</p>
+      <p>The villa also features an indoor living area, providing you with a private space to spend
+      your vacation in full relaxation. Whether you're looking for a romantic getaway or simply
+      need a quiet and peaceful place to escape to during your vacation, this villa is the perfect
+      choice.</p>
+      `,
     images: [
       {
         src: "images/villas/Imperial_1/carousel/Imp1_1_web.jpeg",
@@ -317,8 +350,18 @@ export const villaData = [
     subText: "Five bedroom",
     area: "300m²",
     featureVideo: "https://www.youtube.com/embed/NiA-SfY10aQ",
-    description:
-      "<p>Intentionally designed for relaxation, this villa can accomodate large families or groups of friends with enough space for everyone to unwind.</p><p>With its sprawling living area, this villa is ideal for hosting small gatherings.</p>",
+    description: `<p>Intentionally designed for to accommodate large families or groups of friends
+      this villa offers plenty of room for everyone. It features a sprawling living area,
+      perfect for hosting small gatherings or simply lounging and enjoying the
+      company of loved ones.</p>
+      <p>
+      The villa boasts a range of luxurious amenities, including a fully equipped
+kitchen, comfortable bedrooms, and stylish bathrooms, all designed to make
+your stay as enjoyable and stress-free as possible. Whether you're looking to
+escape the hustle and bustle of everyday life or simply want a comfortable and
+stylish place to call home while on vacation, this villa is the perfect choice.
+      </p>
+      `,
     images: [
       {
         src: "images/villas/Royal_5/carousel/Royal5_1_web.jpeg",
@@ -388,8 +431,18 @@ export const villaData = [
     subText: "Five bedroom",
     area: "187m²",
     featureVideo: "https://www.youtube.com/embed/XwDCw_LONzg",
-    description:
-      "<p>There is plenty of room for everyone to enjoy themselves in this villa's air-conditioned indoor living room, so it's an excellent choice for a family getaway.  A total of three-bedrooms are available in the villa, two of which are furnished with king-size bends and one with a queen-size bed.  Both rooms are furnished with their own air-conditioning and TV.</p>",
+    description: `<p>This villa is the perfect choice for a family getaway or a vacation with a group of
+      friends. With plenty of room for everyone to spread out and enjoy themselves,
+      the villa features a large, air-conditioned indoor living room that is sure to be a
+      hit with everyone. After a long day of sightseeing, come rest in the living room's
+      snug and friendly ambiance thanks to the plush, comfortable furnishings and
+      warm, inviting design.</p>
+      <p>The villa has a total of three bedrooms, offering privacy for all of the guests. Two
+      of the bedrooms feature king-size beds, while the third bedroom has a queen-
+      size bed. Each room has its own air conditioning and television, guaranteeing
+      that you may relax and rejuvenate in perfect comfort.
+      </p>
+      `,
     images: [
       {
         src: "images/villas/Royal_3/carousel/Royal3_1_web.jpeg",
@@ -471,8 +524,16 @@ export const villaData = [
     subText: "Five bedroom",
     area: "96m²",
     featureVideo: "https://www.youtube.com/embed/3ylwNbag1SY",
-    description:
-      "<p>This tastefully designed villa is equipped with two bedrooms and an enclosed living area, all of which have air-conditioning and TV.  It has the capacity to accommodate up to 4 people while still maintaining a spacious atmosphere.</p>",
+    description: `<p>This tastefully designed villa is the perfect choice for a relaxing and enjoyable
+      vacation. Equipped with two bedrooms and an enclosed living area, the villa
+      offers a range of luxurious amenities to ensure that you have everything you
+      need for a comfortable and rejuvenating stay.</p>
+      <p>Both the bedrooms and living area are equipped with air-conditioning and TV,
+      providing you with a comfortable and convenient place spend your break from
+      the uproarious of the world. The villa has the capacity to accommodate up to 4
+      people, making it an excellent choice for a small family or a group of friends.
+      </p>
+      `,
     images: [
       {
         src: "images/villas/Royal_2/carousel/Royal2_1_web.jpeg",

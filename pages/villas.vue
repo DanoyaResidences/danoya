@@ -22,9 +22,15 @@ import AutoCarousel from "../components/widgets/AutoCarousel.vue";
 const infoSectionText = {
   title: "Our Villas",
   text: `<p
-          class="font-serif text-sm md:text-md line leading-7 md:leading-9 mx-4 tracking-wide"
+          class="font-serif text-sm md:text-base line leading-2 md:leading-2 tracking-wide"
         >
-         Your stay in Bali will feel even more convenient with our fully furnished kitchens and private swimming pools that come standard in each of our villas.
+         Escape to paradise and enjoy a truly luxurious and relaxing vacation with
+our fully furnished villas in Bali. Our villas are designed with your comfort
+and convenience in mind, featuring a range of amenities that are sure to make your stay as enjoyable and stress-free as possible.
+        </p>
+        <p
+        class="font-serif text-sm md:text-base line leading-2 md:leading-2 tracking-wide">
+        Our villas come equipped with fully furnished kitchens and private pools for a comfortable and enjoyable vacation experience. They provide all the necessary amenities for cooking and relaxing, making them the perfect choice for a memorable stay.
         </p>
         `,
   imageSrc: "/images/our-villas/Our_villas_header.jpeg",

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex w-5/6 mx-auto flex-col md:flex-row flex-wrap mt-20 align-middle shadow-md"
+    class="flex w-5/6 mx-auto flex-col md:flex-row flex-wrap mt-20 align-middle shadow-md mb-5"
   >
     <div class="w-full md:w-1/2 mb-8 md:px-5">
       <h2
@@ -16,7 +16,7 @@
     </div>
     <div class="w-full md:w-1/2 md:px-5 flex align-middle mb-5">
       <img
-        class="mx-auto my-auto max-w-fit w-10/12 max-h-80 object-cover"
+        class="mx-3 max-w-fit w-11/12 object-cover"
         :src="content.imageSrc"
         alt="Danoya Logo"
       />
@@ -31,14 +31,14 @@ export default {
 </script>
 
 <style>
-.textContent p {
+/* .textContent p {
   font-size: 0.875rem;
   line-height: 1.5rem;
-}
-@media only screen and (min-width: 768px) {
+} */
+/* @media only screen and (min-width: 768px) {
   .textContent p {
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
-}
+} */
 </style>
