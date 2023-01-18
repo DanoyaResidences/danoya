@@ -1,6 +1,8 @@
 <template>
   <div class="w-10/12 md:w-10/12 mx-auto mt-20">
-    <h2 class="text-3xl tracking-wider text-left md:text-center m-4">
+    <h2
+      class="text-3xl tracking-wider text-left md:text-center m-4 underline underline-offset-8"
+    >
       {{ content.title }}
     </h2>
     <!-- First row of image and content -->
