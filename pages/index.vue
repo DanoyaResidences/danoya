@@ -39,22 +39,18 @@ accommodations provide guests with the
 ultimate in relaxation and luxury. We are here to
 provide you with the ideal stay, ensuring that
 you can make the most of your time in Bali,
-whether you're traveling solo, with family, or with
+whether you're traveling solo, with family, or
 friends.
         </p>`,
   imageSrc: "/images/home/Welcome.jpeg",
 };
 
 const ourLocationText = {
-  title: "Our location",
+  title: "Our Location",
   text: `<p
           class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest"
         >
-          Danoya Private Luxury Residences is located in a prime location,
-within short driving distance of some of Bali's most popular
-attractions. Our villas are just a short drive from Kuta Beach,
-Canggu, and the Seminyak Shopping Centre, making it easy for
-guests to get around and explore all that the area has to offer.
+          Danoya Private Luxury Residences is nestled in the heart of the vibrant Seminyak, Bali.  Just a stone's throw away from pristine beaches and a quick drive to the famous beach clubs and Seminyak Shopping Centre, our villas are the perfect base for your adventures in this tropical paradise.  Situated on the central Batu Belig road, the main artery connecting the exciting entertainment districts of Seminyak and Canggu, you'll find it easy to get around and explore all that the area has to offer.
         </p>
         `,
   imageSrc: "/images/our-villas/Our_villas_header.jpeg",
@@ -80,7 +76,7 @@ const textAndGalleryText = {
         <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
         Experience the best of the best at our luxurious villa complex, featuring a seamless blend of Mediterranean and tropical design with a nod to traditional Balinese aesthetics.
         </p>
-  <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
+  <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest md:mb-8">
           Our 20 beautifully designed villas offer open floor plans, enclosed lounge area, fully equipped kitchens, and private pools, providing you with everything you need for a comfortable and enjoyable stay.
         </p>
         `,

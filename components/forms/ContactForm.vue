@@ -7,10 +7,11 @@
       <!-- Form -->
       <form class="mt-8 border-2 border-gray-300 rounded-md p-5">
         <p
-          class="mt-10 mb-5 text-xs md:text-sm tracking-wider md:tracking-wide"
+          class="mt-10 mb-5 mx-auto md:w-2/3 leading-7 text-xs md:text-sm tracking-wider md:tracking-wide"
         >
-          Please provide us your details to get back to you in relation to your
-          query.
+          Thank you for visiting our website. If you have any inquiries or would
+          like to provide feedback, please fill out the form below and we will
+          respond to you as soon as possible.
         </p>
 
         <div class="flex flex-row flex-wrap">

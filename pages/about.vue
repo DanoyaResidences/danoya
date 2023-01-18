@@ -23,7 +23,7 @@ const topSectionText = {
   text: `<p
           class="md:text-base text-sm line leading-7 md:leading-9 mx-4 tracking-widest"
         >
-          Danoya Private Luxury Residences was founded in 2003 with the goal of providing guests with the ultimate in relaxation and luxury.  We started small, with just two separate villa units, one with three bedrooms and the other with two.
+          Danoya Private Luxury Residences, established in 2003, strives to offer guests an unparalleled experience of leisure and indulgence. We began modestly, with two villa units - one boasting three bedrooms and the other featuring two.
         </p>
         <p
           class="md:text-base text-sm line leading-7 md:leading-9 mx-4 tracking-widest"
@@ -53,15 +53,15 @@ const textAndGalleryText = {
   topText: `<p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
           In 2011, we added 13 new villas to our selection, bringing the total number of units to 20.  These new villas were designed with the same attention to detail and commitment to quality that have made Danoya a trusted choice for vacationers from around the world.  
         </p>
-       `,
-  bottomText: `<p class="lg:text-lg md:text-md text-sm leading-7 mx-4 tracking-widest">
+        <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest md:mb-6">
           Today, we are proud to offer a wide range of luxurious and well-appointed villas, each of which is equipped with a range of amenities and features to ensure that you have everything you need for a comfortable and enjoyable stay.
         </p>
-        <br />
-        <p class="lg:text-lg md:text-md text-sm leading-7 mx-4 tracking-widest">
+       `,
+  bottomText: `
+        <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
           Whether you're looking for a romantic getaway, a family vacation, or a trip with a group of friends, Danoya has a villa that is sure to meet your needs and exceed your expectations.
         </p>
-        <p class="lg:text-lg md:text-md text-sm leading-7 mx-4 tracking-widest">
+        <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
           Come and experience the ultimate in relaxation and luxury at Danoya Private Luxury Residences.
         </p>`,
   bottomImage: "images/spirit/Spirit_1_web.jpeg",

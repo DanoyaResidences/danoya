@@ -103,10 +103,7 @@
           and enjoyable as possible, and we are always available to assist you
           with any questions or concerns you may have.
         </p>
-        <p class="text-center text-xs md:text-sm">
-          So come and stay with us at Danoya Residences and experience the
-          ultimate in relaxation and luxury in beautiful Bali..
-        </p>
+
         <span class="block text-right mt-8">
           <NuxtLink
             to="/villas"

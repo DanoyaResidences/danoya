@@ -3,9 +3,7 @@
     class="flex w-5/6 mx-auto flex-col md:flex-row flex-wrap mt-20 align-middle shadow-md mb-5"
   >
     <div class="w-full md:w-1/2 mb-8 md:px-5">
-      <h2
-        class="font-theme-font font-semibold text-3xl tracking-wide mb-6 text-center"
-      >
+      <h2 class="font-theme-font text-3xl tracking-wide mb-6 text-center">
         {{ content.title }}
       </h2>
       <!-- Content -->
