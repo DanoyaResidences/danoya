@@ -98,7 +98,7 @@
         </div>
       </div>
       <div class="w-10/12 mx-auto">
-        <p class="text-center text-xs md:text-sm">
+        <p class="text-center text-sm md:text-base">
           Our team is dedicated to ensuring that your vacation is as stress-free
           and enjoyable as possible, and we are always available to assist you
           with any questions or concerns you may have.

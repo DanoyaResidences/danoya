@@ -15,7 +15,7 @@
     <info-section :content="infoSectionText" />
     <fade-carousel />
     <text-and-gallery :content="textAndGalleryText" />
-    <info-section :content="ourLocationText" />
+    <location-section :content="ourLocationText" />
     <Footer />
   </div>
 </template>
