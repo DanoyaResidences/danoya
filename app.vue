@@ -10,7 +10,7 @@ export default {
     useHead({
       script: [
         {
-          src: "./node_modules/tw-elements/dist/js/index.min.js",
+          src: "/node_modules/tw-elements/dist/js/index.min.js",
         },
       ],
       link: [
