@@ -33,6 +33,7 @@ our fully furnished villas in Bali. Our villas are designed with your comfort in
         </p>
         `,
   imageSrc: "/images/our-villas/Our_villas_header.jpeg",
+  imageAlt: "Royal 5 Living area",
 };
 
 export default {

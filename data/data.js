@@ -12,39 +12,39 @@ export const villaData = [
     images: [
       {
         src: "images/villas/Grand_Imperial/carousel/GI1_web.jpeg",
-        alt: "",
+        alt: "Dining area",
       },
       {
         src: "images/villas/Grand_Imperial/carousel/GI2_web.jpeg",
-        alt: "",
+        alt: "Sitting area",
       },
       {
         src: "images/villas/Grand_Imperial/carousel/GI3_web.jpeg",
-        alt: "",
+        alt: "Lounge",
       },
       {
         src: "images/villas/Grand_Imperial/carousel/GI4_web.jpeg",
-        alt: "",
+        alt: "Upstairs lounge",
       },
       {
         src: "images/villas/Grand_Imperial/carousel/GI5_web.jpeg",
-        alt: "",
+        alt: "Bedroom",
       },
       {
         src: "images/villas/Grand_Imperial/carousel/GI6_web.jpeg",
-        alt: "",
+        alt: "Bathroom",
       },
       {
         src: "images/villas/Grand_Imperial/carousel/GI7_web.jpeg",
-        alt: "",
+        alt: "Large bathroom",
       },
       {
         src: "images/villas/Grand_Imperial/carousel/GI8_web.jpeg",
-        alt: "",
+        alt: "Master bedroom",
       },
       {
         src: "images/villas/Grand_Imperial/carousel/GI9_web.jpeg",
-        alt: "",
+        alt: "Living and pool",
       },
     ],
     slidingImages: [
@@ -103,43 +103,47 @@ unwind in a variety of settings. With its beautiful design and luxurious ameniti
     images: [
       {
         src: "images/villas/Imperial_3/carousel/Imp3_1_web.jpeg",
-        alt: "",
+        alt: "Lounge",
       },
       {
         src: "images/villas/Imperial_3/carousel/Imp3_2_web.jpeg",
-        alt: "",
+        alt: "Living area",
       },
       {
         src: "images/villas/Imperial_3/carousel/Imp3_3_web.jpeg",
-        alt: "",
+        alt: "Bedroom",
       },
       {
         src: "images/villas/Imperial_3/carousel/Imp3_4_web.jpeg",
-        alt: "",
+        alt: "Downstairs ensuite bathroom",
       },
       {
         src: "images/villas/Imperial_3/carousel/Imp3_5_web.jpeg",
-        alt: "",
+        alt: "Living area photo taken from kitchen",
       },
       {
         src: "images/villas/Imperial_3/carousel/Imp3_6_web.jpeg",
-        alt: "",
+        alt: "Upstairs Lounge",
       },
       {
         src: "images/villas/Imperial_3/carousel/Imp3_7_web.jpeg",
-        alt: "",
+        alt: "Bathroom sink and shower",
+      },
+      {
+        src: "images/villas/Imperial_3/carousel/Imp3_8_web.jpeg",
+        alt: "Lounge Area looking out",
       },
       {
         src: "images/villas/Imperial_3/carousel/Imp3_9_web.jpeg",
-        alt: "",
+        alt: "Pool side",
       },
       {
         src: "images/villas/Imperial_3/carousel/Imp3_10_web.jpeg",
-        alt: "",
+        alt: "Living area photo taken from pool",
       },
       {
         src: "images/villas/Imperial_3/carousel/Imp3_11_web.jpeg",
-        alt: "",
+        alt: "Master Bedroom",
       },
     ],
     slidingImages: [
@@ -187,39 +191,39 @@ unwind in a variety of settings. With its beautiful design and luxurious ameniti
     images: [
       {
         src: "images/villas/Imperial_2/carousel/Imp2_1_web.jpeg",
-        alt: "",
+        alt: "Kitchen",
       },
       {
         src: "images/villas/Imperial_2/carousel/Imp2_2_web.jpeg",
-        alt: "",
+        alt: "Living area",
       },
       {
         src: "images/villas/Imperial_2/carousel/Imp2_3_web.jpeg",
-        alt: "",
+        alt: "Lounge area",
       },
       {
         src: "images/villas/Imperial_2/carousel/Imp2_4_web.jpeg",
-        alt: "",
+        alt: "Downstairs bathroom",
       },
       {
         src: "images/villas/Imperial_2/carousel/Imp2_5_web.jpeg",
-        alt: "",
+        alt: "Ensuite bathroom",
       },
       {
         src: "images/villas/Imperial_2/carousel/Imp2_6_web.jpeg",
-        alt: "",
+        alt: "Bedroom",
       },
       {
         src: "images/villas/Imperial_2/carousel/Imp2_7_web.jpeg",
-        alt: "",
+        alt: "Pool",
       },
       {
         src: "images/villas/Imperial_2/carousel/Imp2_8_web.jpeg",
-        alt: "",
+        alt: "Enclosed living area photo taken from the pool",
       },
       {
         src: "images/villas/Imperial_2/carousel/Imp2_9_web.jpeg",
-        alt: "",
+        alt: "Pool and garden",
       },
     ],
     slidingImages: [
@@ -273,23 +277,23 @@ unwind in a variety of settings. With its beautiful design and luxurious ameniti
     images: [
       {
         src: "images/villas/Imperial_1/carousel/Imp1_1_web.jpeg",
-        alt: "",
+        alt: "Bedroom",
       },
       {
         src: "images/villas/Imperial_1/carousel/Imp1_2_web.jpeg",
-        alt: "",
+        alt: "Bathroom",
       },
       {
         src: "images/villas/Imperial_1/carousel/Imp1_3_web.jpeg",
-        alt: "",
+        alt: "Villa photo taken from pool",
       },
       {
         src: "images/villas/Imperial_1/carousel/Imp1_4_web.jpeg",
-        alt: "",
+        alt: "Indoor living area",
       },
       {
         src: "images/villas/Imperial_1/carousel/Imp1_5_web.jpeg",
-        alt: "",
+        alt: "Outdoor area",
       },
     ],
     slidingImages: [
@@ -346,35 +350,35 @@ stylish place to call home while on vacation, this villa is the perfect choice.
     images: [
       {
         src: "images/villas/Royal_5/carousel/Royal5_1_web.jpeg",
-        alt: "",
+        alt: "Living area looking out to pool",
       },
       {
         src: "images/villas/Royal_5/carousel/Royal5_2_web.jpeg",
-        alt: "",
+        alt: "Living area facing kitchen",
       },
       {
         src: "images/villas/Royal_5/carousel/Royal5_3_web.jpeg",
-        alt: "",
+        alt: "Living area facing television",
       },
       {
         src: "images/villas/Royal_5/carousel/Royal5_4_web.jpeg",
-        alt: "",
+        alt: "Pool and garden area",
       },
       {
         src: "images/villas/Royal_5/carousel/Royal5_5_web.jpeg",
-        alt: "",
+        alt: "Living area photo taken from pool",
       },
       {
         src: "images/villas/Royal_5/carousel/Royal5_6_web.jpeg",
-        alt: "",
+        alt: "Bedroom",
       },
       {
         src: "images/villas/Royal_5/carousel/Royal5_7_web.jpeg",
-        alt: "",
+        alt: "Low shot of pool area from pool chair",
       },
       {
         src: "images/villas/Royal_5/carousel/Royal5_8_web.jpeg",
-        alt: "",
+        alt: "Full villa shot taken from pool",
       },
     ],
     slidingImages: [
@@ -426,43 +430,43 @@ stylish place to call home while on vacation, this villa is the perfect choice.
     images: [
       {
         src: "images/villas/Royal_3/carousel/Royal3_1_web.jpeg",
-        alt: "",
+        alt: "Living area facing television",
       },
       {
         src: "images/villas/Royal_3/carousel/Royal3_2_web.jpeg",
-        alt: "",
+        alt: "Living area facing kitchen",
       },
       {
         src: "images/villas/Royal_3/carousel/Royal3_3_web.jpeg",
-        alt: "",
+        alt: "Living area facing out to pool",
       },
       {
         src: "images/villas/Royal_3/carousel/Royal3_4_web.jpeg",
-        alt: "",
+        alt: "Pool and garden area",
       },
       {
         src: "images/villas/Royal_3/carousel/Royal3_5_web.jpeg",
-        alt: "",
+        alt: "Bedroom",
       },
       {
         src: "images/villas/Royal_3/carousel/Royal3_6_web.jpeg",
-        alt: "",
+        alt: "Bathroom",
       },
       {
         src: "images/villas/Royal_3/carousel/Royal3_7_web.jpeg",
-        alt: "",
+        alt: "Bedroom with twin beds",
       },
       {
         src: "images/villas/Royal_3/carousel/Royal3_8_web.jpeg",
-        alt: "",
+        alt: "Bedroom photo taken from side",
       },
       {
         src: "images/villas/Royal_3/carousel/Royal3_9_web.jpeg",
-        alt: "",
+        alt: "Bedroom with window open",
       },
       {
         src: "images/villas/Royal_3/carousel/Royal3_10_web.jpeg",
-        alt: "",
+        alt: "Living area photo taken from pool closeup",
       },
     ],
     slidingImages: [
@@ -516,27 +520,27 @@ stylish place to call home while on vacation, this villa is the perfect choice.
     images: [
       {
         src: "images/villas/Royal_2/carousel/Royal2_1_web.jpeg",
-        alt: "",
+        alt: "Villa photo taken from pool",
       },
       {
         src: "images/villas/Royal_2/carousel/Royal2_2_web.jpeg",
-        alt: "",
+        alt: "Pool and garden",
       },
       {
         src: "images/villas/Royal_2/carousel/Royal2_3_web.jpeg",
-        alt: "",
+        alt: "Bathroom",
       },
       {
         src: "images/villas/Royal_2/carousel/Royal2_4_web.jpeg",
-        alt: "",
+        alt: "Bedroom",
       },
       {
         src: "images/villas/Royal_2/carousel/Royal2_5_web.jpeg",
-        alt: "",
+        alt: "Lounge area",
       },
       {
         src: "images/villas/Royal_2/carousel/Royal2_6_web.jpeg",
-        alt: "",
+        alt: "Bedroom with window",
       },
     ],
     slidingImages: [

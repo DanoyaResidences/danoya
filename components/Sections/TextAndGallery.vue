@@ -11,8 +11,8 @@
       <div class="mb-10 mt-4 md:mb-0 w-full md:w-7/12 flex align-bottom">
         <img
           class="object-cover"
-          :src="returnCurrentGalleryImageSrc(galleryCounter).src"
-          alt=""
+          :src="returnCurrentGalleryImage(galleryCounter).src"
+          :alt="returnCurrentGalleryImage(galleryCounter).alt"
         />
         <!-- Gallery button box -->
         <div class="absolute bg-gray-200 flex-col w-12 hidden md:flex">
@@ -41,7 +41,11 @@
       <div
         class="my-10 md:mt-0 md:w-1/2 hidden md:show md:flex md:relative bottom-8"
       >
-        <img class="object-cover" :src="content.bottomImage" alt="" />
+        <img
+          class="object-cover"
+          :src="content.bottomImage.src"
+          :alt="content.bottomImage.alt"
+        />
       </div>
       <div
         class="w-full md:w-1/2 my-auto px-2"
@@ -57,7 +61,7 @@ export default {
   setup(props) {
     const galleryCounter = ref(0);
     // Returns the current gallery item based on index
-    function returnCurrentGalleryImageSrc(galleryIndex) {
+    function returnCurrentGalleryImage(galleryIndex) {
       return props.content.gallery[galleryIndex];
     }
 
@@ -80,7 +84,7 @@ export default {
     return {
       galleryCounter,
       modifygalleryCounter,
-      returnCurrentGalleryImageSrc,
+      returnCurrentGalleryImage,
     };
   },
 };

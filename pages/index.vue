@@ -43,17 +43,17 @@ whether you're traveling solo, with family, or
 friends.
         </p>`,
   imageSrc: "/images/home/Welcome.jpeg",
+  imageAlt: "Danoya entrance at night",
 };
 
 const ourLocationText = {
   title: "Our Location",
   text: `<p
-          class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest"
+          class="lg:text-base md:text-sm text-xs leading-7 mx-auto tracking-widest"
         >
-          Danoya Private Luxury Residences is nestled in the heart of the vibrant Seminyak, Bali.  Just a stone's throw away from pristine beaches and a quick drive to the famous beach clubs and Seminyak Shopping Centre, our villas are the perfect base for your adventures in this tropical paradise.  Situated on the central Batu Belig road, the main artery connecting the exciting entertainment districts of Seminyak and Canggu, you'll find it easy to get around and explore all that the area has to offer.
+          Danoya Private Luxury Residences offers a luxurious retreat in the bustling neighborhood of Seminyak, Bali. Located just steps away from picturesque beaches and a short drive to popular beach clubs and the Seminyak Shopping Centre. Our villas provide the ideal location for exploring the vibrant entertainment districts of both Seminyak and Canggu, making it the perfect base for your tropical paradise getaway.
         </p>
         `,
-  imageSrc: "/images/our-villas/Our_villas_header.jpeg",
 };
 
 const textAndGalleryText = {
@@ -61,15 +61,15 @@ const textAndGalleryText = {
   gallery: [
     {
       src: "images/spirit/spirit_1_web.jpeg",
-      alt: "",
+      alt: "Danoya Walkway",
     },
     {
       src: "images/spirit/spirit_2_web.jpeg",
-      alt: "",
+      alt: "Danoya entrance area",
     },
     {
       src: "images/spirit/spirit_3_web.jpeg",
-      alt: "",
+      alt: "Danoya Concierge / Lobby",
     },
   ],
   topText: `
@@ -84,7 +84,10 @@ const textAndGalleryText = {
           Our wealth of experience of over 15 years and dedication to excellence have made us a trusted choice for vacationers from around the world, and we take pride in offering our guests the highest level of convenience and relaxation at their home away from home.
         </p>
         `,
-  bottomImage: "images/villas/Grand_Imperial/carousel/GI1_web.jpeg",
+  bottomImage: {
+    src: "images/villas/Grand_Imperial/carousel/GI1_web.jpeg",
+    alt: "Grand Imperial 3 dining area",
+  },
 };
 
 export default {

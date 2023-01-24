@@ -17,8 +17,8 @@
         <div class="w-full sm:w-4/12 mx-auto my-auto sm:h-full px-4">
           <img
             class="object-cover sm:h-full w-full"
-            :src="content.team[0].imageSrc"
-            alt=""
+            :src="currentTeamMember.imageSrc"
+            :alt="currentTeamMember.alt"
           />
         </div>
         <!-- Team text section -->

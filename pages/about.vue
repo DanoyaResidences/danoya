@@ -32,6 +32,7 @@ const topSectionText = {
         </p>
         <span class="mt-8 ml-4">- Danoya's History</span>`,
   imageSrc: "/images/about/About_top.jpeg",
+  imageAlt: "Danoya's picturesque walkway during sunset",
 };
 
 const textAndGalleryText = {
@@ -39,15 +40,15 @@ const textAndGalleryText = {
   gallery: [
     {
       src: "images/about/Slide_1.jpeg",
-      alt: "",
+      alt: "Danoya's green walkway",
     },
     {
       src: "images/about/Slide_2.jpeg",
-      alt: "",
+      alt: "Royal 2 Living",
     },
     {
       src: "images/about/Slide_3.jpeg",
-      alt: "",
+      alt: "Royal 2 bedroom",
     },
   ],
   topText: `<p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
@@ -64,7 +65,10 @@ const textAndGalleryText = {
         <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
           Come and experience the ultimate in relaxation and luxury at Danoya Private Luxury Residences.
         </p>`,
-  bottomImage: "images/spirit/Spirit_1_web.jpeg",
+  bottomImage: {
+    src: "images/spirit/Spirit_1_web.jpeg",
+    alt: "Danoya villa entrance with sign",
+  },
 };
 
 const ourTeamContent = {
@@ -80,6 +84,7 @@ const ourTeamContent = {
     {
       name: "Calvin Santoso",
       role: "Resident Manager",
+      alt: "Profile photo of Calvin Santoso",
       imageSrc: "images/spirit/spirit_1_web.jpeg",
       text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
@@ -91,6 +96,7 @@ const ourTeamContent = {
     {
       name: "Ni Wayan Puryani",
       role: "Accounting Director",
+      alt: "Profile photo of Ni Wayan Puryani",
       imageSrc: "images/spirit/spirit_1_web.jpeg",
       text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
@@ -102,6 +108,7 @@ const ourTeamContent = {
     {
       name: "Oka Pramana",
       role: "House Keeping Supervisor",
+      alt: "Profile photo of Oka Pramana",
       imageSrc: "images/spirit/spirit_1_web.jpeg",
       text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,

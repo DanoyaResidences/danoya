@@ -18,7 +18,7 @@
       <img
         class="mx-3 max-w-fit w-11/12 object-cover"
         :src="content.imageSrc"
-        alt="Danoya Logo"
+        :alt="content.imageAlt"
       />
     </div>
   </div>

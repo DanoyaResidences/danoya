@@ -10,7 +10,7 @@
       </h2>
       <!-- Content -->
       <div
-        class="flex h-full flex-col text-sm line leading-7 md:leading-9 mx-4 tracking-wide textContent"
+        class="flex h-full flex-col mx-4 textContent"
         v-html="content.text"
       ></div>
     </div>
