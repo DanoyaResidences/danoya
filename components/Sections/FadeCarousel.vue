@@ -33,21 +33,21 @@
       <div class="carousel-inner relative w-full overflow-hidden">
         <div class="carousel-item active float-left w-full">
           <img
-            src="images/villas/Grand_Imperial/carousel/GI9_web.jpeg"
+            src="/images/villas/Grand_Imperial/carousel/GI9_web.jpeg"
             class="block w-full"
             alt="Grand Imperial living area"
           />
         </div>
         <div class="carousel-item float-left w-full">
           <img
-            src="images/villas/Royal_5/carousel/Royal5_1_web.jpeg"
+            src="/images/villas/Royal_5/carousel/Royal5_1_web.jpeg"
             class="block w-full"
             alt="Royal 5-bedroom living area"
           />
         </div>
         <div class="carousel-item float-left w-full">
           <img
-            src="images/villas/Imperial_1/carousel/Imp1_5_web.jpeg"
+            src="/images/villas/Imperial_1/carousel/Imp1_5_web.jpeg"
             class="block w-full"
             alt="Imperial 1 Honeymoon"
           />

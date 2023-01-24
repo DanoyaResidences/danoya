@@ -148,15 +148,15 @@ unwind in a variety of settings. With its beautiful design and luxurious ameniti
     ],
     slidingImages: [
       {
-        src: "images/villas/Imperial_3/scrolling/imp3_1_scrolling.jpeg",
+        src: "images/villas/Imperial_3/scrolling/Imp3_1_scrolling.jpeg",
         alt: "",
       },
       {
-        src: "images/villas/Imperial_3/scrolling/imp3_2_scrolling.jpeg",
+        src: "images/villas/Imperial_3/scrolling/Imp3_2_scrolling.jpeg",
         alt: "",
       },
       {
-        src: "images/villas/Imperial_3/scrolling/imp3_3_scrolling.jpeg",
+        src: "images/villas/Imperial_3/scrolling/Imp3_3_scrolling.jpeg",
         alt: "",
       },
     ],

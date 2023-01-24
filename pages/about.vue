@@ -85,7 +85,7 @@ const ourTeamContent = {
       name: "Calvin Santoso",
       role: "Resident Manager",
       alt: "Profile photo of Calvin Santoso",
-      imageSrc: "images/spirit/spirit_1_web.jpeg",
+      imageSrc: "images/spirit/Spirit_1_web.jpeg",
       text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
@@ -97,7 +97,7 @@ const ourTeamContent = {
       name: "Ni Wayan Puryani",
       role: "Accounting Director",
       alt: "Profile photo of Ni Wayan Puryani",
-      imageSrc: "images/spirit/spirit_1_web.jpeg",
+      imageSrc: "images/spirit/Spirit_1_web.jpeg",
       text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
@@ -109,7 +109,7 @@ const ourTeamContent = {
       name: "Oka Pramana",
       role: "House Keeping Supervisor",
       alt: "Profile photo of Oka Pramana",
-      imageSrc: "images/spirit/spirit_1_web.jpeg",
+      imageSrc: "images/spirit/Spirit_1_web.jpeg",
       text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro

@@ -60,15 +60,15 @@ const textAndGalleryText = {
   title: `Home Away From Home`,
   gallery: [
     {
-      src: "images/spirit/spirit_1_web.jpeg",
+      src: "images/spirit/Spirit_1_web.jpeg",
       alt: "Danoya Walkway",
     },
     {
-      src: "images/spirit/spirit_2_web.jpeg",
+      src: "images/spirit/Spirit_2_web.jpeg",
       alt: "Danoya entrance area",
     },
     {
-      src: "images/spirit/spirit_3_web.jpeg",
+      src: "images/spirit/Spirit_3_web.jpeg",
       alt: "Danoya Concierge / Lobby",
     },
   ],
