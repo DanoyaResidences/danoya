@@ -122,6 +122,7 @@ export default {
     useHead({
       meta: [
         {
+          hid: "description",
           name: "description",
           content: "Danoya about us and our history.",
         },

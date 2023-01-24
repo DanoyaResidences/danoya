@@ -23,6 +23,7 @@ export default {
     useHead({
       meta: [
         {
+          hid: "description",
           name: "description",
           content:
             "Welcome to the home page of Beach Side (by Danoya). A blog dedicated to all that you need to know on the Island of the Gods",

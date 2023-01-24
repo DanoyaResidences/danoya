@@ -45,9 +45,10 @@ export default {
     useHead({
       meta: [
         {
+          hid: "description",
           name: "description",
           content:
-            "At Danoya we have a wide selection of villas fit for every type of guest. There are two primary categories of villas: Imperial and Royal",
+            "At Danoya we have a wide selection of villas fit for every type of guest. Our villas come in two categories: Imperial and Royal",
         },
       ],
     });

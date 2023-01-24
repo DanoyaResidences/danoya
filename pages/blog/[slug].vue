@@ -31,6 +31,7 @@ export default {
         useHead({
           meta: [
             {
+              hid: "description",
               name: "description",
               content: blogArticle.value.metaDescription,
             },
