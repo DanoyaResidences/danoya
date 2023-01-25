@@ -1,9 +1,9 @@
 <template>
-  <div class="h-[80vh] sm:min-h-[500px] -mt-56 mb-24">
+  <div class="h-[80vh] sm:min-h-[550px] -mt-56 mb-24">
     <!-- Parallax -->
     <div
       :style="`background-image: url(${imagePath})`"
-      class="w-full h-full bg-no-repeat bg-cover bg-fixed bg-center sm:min-h-[500px]"
+      class="w-full h-full bg-no-repeat bg-cover bg-fixed bg-center sm:min-h-[550px]"
     >
       <!-- Picture filter -->
       <div class="w-full h-full bg-gray-700 opacity-70 flex justify-center">

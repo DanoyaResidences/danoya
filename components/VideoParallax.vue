@@ -1,12 +1,12 @@
 <template>
-  <div class="h-[80vh] sm:min-h-[500px] -mt-56 mb-24">
+  <div class="h-[80vh] sm:min-h-[600px] -mt-56 mb-24">
     <!-- Parallax -->
-    <div class="w-full h-full sm:min-h-[500px]">
+    <div class="w-full h-full sm:min-h-[600px]">
       <video
         autoplay
         muted
         loop
-        class="absolute -z-30 min-w-full h-[80vh] sm:min-h-[500px] object-fill"
+        class="absolute -z-30 min-w-full h-[80vh] sm:min-h-[600px] object-fill"
       >
         <!-- Show different source based on screen size -->
         <source v-if="videoToShow !== ''" :src="videoToShow" type="video/mp4" />
