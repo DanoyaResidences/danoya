@@ -78,9 +78,9 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
+    <!-- Bottom Section -->
     <div class="md:w-2/3 w-full mx-auto">
-      <!-- Feature video -->
+      <!-- Feature video section -->
       <div class="w-full mt-1 mx-auto cursor-pointer group text-center">
         <!-- Icon -->
         <i
@@ -97,13 +97,14 @@
           Feature Video
         </div>
       </div>
+      <!-- Text section -->
       <div class="w-10/12 mx-auto">
         <p class="text-center text-sm md:text-base">
           Our team is dedicated to ensuring that your vacation is as stress-free
           and enjoyable as possible, and we are always available to assist you
           with any questions or concerns you may have.
         </p>
-
+        <!-- Link to villas -->
         <span class="block text-right mt-8">
           <NuxtLink
             to="/villas"

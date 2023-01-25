@@ -13,7 +13,7 @@
       videoPath=""
     />
     <info-section :content="infoSectionText" />
-    <fade-carousel />
+    <carousel />
     <text-and-gallery :content="textAndGalleryText" />
     <location-section :content="ourLocationText" />
     <Footer />
@@ -24,6 +24,7 @@
 import TextAndGallery from "../components/Sections/TextAndGallery.vue";
 import FadeCarousel from "../components/Sections/FadeCarousel.vue";
 import VideoParallax from "../components/VideoParallax.vue";
+import Carousel from "../components/Sections/Carousel.vue";
 
 // Text data
 const infoSectionText = {
@@ -95,6 +96,7 @@ export default {
     TextAndGallery,
     FadeCarousel,
     VideoParallax,
+    Carousel,
   },
   setup() {
     useHead({
