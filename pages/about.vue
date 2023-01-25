@@ -21,16 +21,16 @@ import ImageBetweenText from "../components/Sections/ImageBetweenText.vue";
 const topSectionText = {
   title: "Our History",
   text: `<p
-          class="md:text-base text-sm line leading-7 md:leading-9 mx-4 tracking-widest"
+          class="lg:text-base sm:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-wider"
         >
           Danoya Private Luxury Residences, established in 2003, strives to offer guests an unparalleled experience of leisure and indulgence. We began modestly, with two villa units - one boasting three bedrooms and the other featuring two.
         </p>
         <p
-          class="md:text-base text-sm line leading-7 md:leading-9 mx-4 tracking-widest"
+          class="lg:text-base sm:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-wider"
         >
          We were determined to grow both in size and in quality, and in 2009 we accomplished this with the construction of seven additional new villa units.
         </p>
-        <span class="mt-8 ml-4">- Danoya's History</span>`,
+        `,
   imageSrc: "/images/about/About_top.jpeg",
   imageAlt: "Danoya's picturesque walkway during sunset",
 };
@@ -51,19 +51,19 @@ const textAndGalleryText = {
       alt: "Royal 2 bedroom",
     },
   ],
-  topText: `<p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
+  topText: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
           In 2011, we added 13 new villas to our selection, bringing the total number of units to 20.  These new villas were designed with the same attention to detail and commitment to quality that have made Danoya a trusted choice for vacationers from around the world.  
         </p>
-        <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest md:mb-6">
+        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider md:mb-10">
           Today, we are proud to offer a wide range of luxurious and well-appointed villas, each of which is equipped with a range of amenities and features to ensure that you have everything you need for a comfortable and enjoyable stay.
         </p>
        `,
   bottomText: `
-        <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
+        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
           Whether you're looking for a romantic getaway, a family vacation, or a trip with a group of friends, Danoya has a villa that is sure to meet your needs and exceed your expectations.
         </p>
-        <p class="lg:text-lg md:text-md text-sm leading-7 mx-auto tracking-widest">
-          Come and experience the ultimate in relaxation and luxury at Danoya Private Luxury Residences.
+        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
+          Come and experience the ultimate in relaxation and luxury at Danoya Private Luxury Residences!
         </p>`,
   bottomImage: {
     src: "images/spirit/Spirit_1_web.jpeg",
@@ -73,10 +73,10 @@ const textAndGalleryText = {
 
 const ourTeamContent = {
   title: "Our Team",
-  introText: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
+  introText: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
           Our hotel team is dedicated to providing exceptional service to every guest that walks through our doors. 
         </p>
-        <p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
+        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
           From the front desk to housekeeping, every team member is committed to going above and beyond to ensure that our guests have a comfortable and memorable stay. Their attention to detail and warm approach make our hotel stand out as a top choice for travelers.
         </p>
         `,
@@ -86,7 +86,7 @@ const ourTeamContent = {
       role: "Resident Manager",
       alt: "Profile photo of Calvin Santoso",
       imageSrc: "/images/spirit/Spirit_2_web.jpeg",
-      text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
+      text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
           voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
@@ -98,7 +98,7 @@ const ourTeamContent = {
       role: "Accounting Director",
       alt: "Profile photo of Ni Wayan Puryani",
       imageSrc: "/images/spirit/Spirit_2_web.jpeg",
-      text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
+      text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
           voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,
@@ -110,7 +110,7 @@ const ourTeamContent = {
       role: "House Keeping Supervisor",
       alt: "Profile photo of Oka Pramana",
       imageSrc: "/images/spirit/Spirit_2_web.jpeg",
-      text: `<p class="lg:text-lg md:text-base text-sm leading-7 md:leading-9 mx-4 tracking-widest">
+      text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id,
           officia consequatur, labore voluptatibus reprehenderit corporis porro
           voluptatem non iste cupiditate quae quidem consectetur ab illo soluta,

@@ -8,7 +8,7 @@
     <!-- First row of image and content -->
     <div class="flex flex-row align-middle flex-wrap">
       <div class="w-full md:w-5/12 my-auto px-2" v-html="content.topText"></div>
-      <div class="mb-10 mt-4 md:mb-0 w-full md:w-7/12 flex align-bottom">
+      <div class="mb-2 mt-4 md:mb-0 w-full md:w-7/12 flex align-bottom">
         <img
           class="object-cover"
           :src="returnCurrentGalleryImage(galleryCounter).src"
