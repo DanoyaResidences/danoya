@@ -1,17 +1,17 @@
 <template>
   <div
     :class="
-      navbarVisible
+      navbarBgVisible
         ? 'sticky top-0 z-10 mt-40 bg-gray-100 transition-all hidden md:block duration-500'
         : 'sticky top-0 z-10 mt-40 bg-transparent transition-all hidden md:block duration-500'
     "
   >
     <div class="flex flex-row">
       <!-- First column  -->
-      <!-- Show one of below items based on if navbarVisible -->
+      <!-- Show one of below items based on if navbarBgVisible -->
       <!-- Return column with content -->
       <div
-        v-show="navbarVisible"
+        v-show="navbarBgVisible"
         class="w-1/6 justify-center hover:bg-blue-300 transition-all duration-300"
       >
         <NuxtLink to="/">
@@ -23,7 +23,7 @@
         </NuxtLink>
       </div>
       <!-- Return empty column for spacing -->
-      <div v-show="!navbarVisible" class="w-1/6"></div>
+      <div v-show="!navbarBgVisible" class="w-1/6"></div>
 
       <!-- Second column -->
       <div class="flex w-2/3 justify-center">
@@ -35,7 +35,7 @@
           >
             <NuxtLink
               :class="
-                navbarVisible
+                navbarBgVisible
                   ? 'group text-gray-700 transition-all duration-300'
                   : 'group text-gray-300 transition-all duration-300'
               "
@@ -50,9 +50,9 @@
         </ul>
       </div>
       <!-- Third column -->
-      <!-- Show one of below items based on if navbarVisible -->
+      <!-- Show one of below items based on if navbarBgVisible -->
       <a
-        v-show="navbarVisible"
+        v-show="navbarBgVisible"
         href="https://app.mews.com/distributor/3a149bb7-5edc-407c-8f07-ac4d0099998d"
         class="text-white bg-blue-300 hover:text-black w-1/6 hover:bg-gray-200 transition-all duration-300"
       >
@@ -61,21 +61,21 @@
         </div>
       </a>
 
-      <div v-show="!navbarVisible" class="w-1/6"></div>
+      <div v-show="!navbarBgVisible" class="w-1/6"></div>
     </div>
   </div>
 </template>
 
 <script>
-const navbarVisible = ref(false);
+const navbarBgVisible = ref(false);
 
 const changeBackground = () => {
   //   console.log(window.scrollY);
   // If greater than 210 pixels
   if (window.scrollY >= 350) {
-    navbarVisible.value = true;
+    navbarBgVisible.value = true;
   } else {
-    navbarVisible.value = false;
+    navbarBgVisible.value = false;
   }
 };
 export default {
@@ -113,7 +113,7 @@ export default {
     // Change background if above 160 px: sets state var to Boolean
 
     return {
-      navbarVisible,
+      navbarBgVisible,
       navLinks,
     };
   },

@@ -38,7 +38,7 @@
 
       <!-- Column 3 -->
       <div class="flex-auto w-1/4 flex justify-center">
-        <!-- Only one of 2 elements (book button or icon div) below will be visible at any given time -->
+        <!-- Only one of 2 elements (book button link or icon div) below will be visible at any given time -->
         <a
           href="https://app.mews.com/distributor/3a149bb7-5edc-407c-8f07-ac4d0099998d"
           class="hidden md:block my-auto"
@@ -50,7 +50,7 @@
             Book now
           </button>
         </a>
-        <!-- Icon -->
+        <!-- Booking Icon -->
         <div
           class="group flex justify-center md:hidden w-full h-full transition-all duration-300 bg-blue-400 hover:bg-gray-700"
         >

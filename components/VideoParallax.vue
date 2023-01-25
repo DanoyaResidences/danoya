@@ -1,31 +1,34 @@
 <template>
-  <div class="h-[80vh] md:h-screen -mt-56">
+  <div class="h-[80vh] sm:min-h-[500px] -mt-56 mb-24">
     <!-- Parallax -->
-    <div class="w-full h-full">
+    <div class="w-full h-full sm:min-h-[500px]">
       <video
         autoplay
         muted
         loop
-        class="absolute -z-30 min-w-full h-[80vh] md:h-full max-w-none object-fill"
+        class="absolute -z-30 min-w-full h-[80vh] sm:min-h-[500px] object-fill"
       >
         <!-- Show different source based on screen size -->
         <source v-if="videoToShow !== ''" :src="videoToShow" type="video/mp4" />
       </video>
       <!-- Picture filter -->
       <div class="w-full h-full bg-gray-700 opacity-70 flex justify-center">
-        <h1
-          style="line-height: 70px"
-          class="my-auto text-xl sm:text-4xl text-center text-white font-theme-font md:w-1/2"
-        >
-          <span
-            style="line-height: 30px"
-            class="font-light text-lg sm:text-2xl font-serif"
+        <!-- Text -->
+        <div class="w-full flex align-middle mt-10">
+          <h1
+            style="line-height: 70px"
+            class="m-auto sm:mt-56 text-xl md:text-3xl lg:text-4xl text-center text-white font-theme-font md:w-1/2"
           >
-            {{ heading }}
-          </span>
-          <br />
-          {{ subHeading }}
-        </h1>
+            <span
+              style="line-height: 30px"
+              class="font-light text-lg md:text-2xl lg:text-2xl font-serif"
+            >
+              {{ heading }}
+            </span>
+            <br />
+            {{ subHeading }}
+          </h1>
+        </div>
       </div>
     </div>
   </div>
