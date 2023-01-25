@@ -6,6 +6,7 @@
         autoplay
         muted
         loop
+        playsinline
         class="absolute -z-30 min-w-full h-[80vh] sm:min-h-[600px] object-fill"
       >
         <!-- Show different source based on screen size -->
