@@ -1,13 +1,13 @@
 <template>
   <Swiper
-    class="h-[80vh]"
+    class="h-full"
     :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperController]"
     :slides-per-view="1"
     :loop="true"
     :effect="'creative'"
     :autoplay="{
       delay: 5000,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     }"
     :creative-effect="{
       prev: {
@@ -41,7 +41,7 @@ const carouselImages = [
   },
 ];
 export default {
-  props: ["images"],
+  props: [],
   setup() {
     return {
       carouselImages,

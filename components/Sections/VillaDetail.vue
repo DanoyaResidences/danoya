@@ -137,7 +137,7 @@
           <div class="w-2/6 relative pt-6 pl-6 hidden md:block">
             <!-- Image slider -->
             <div class="relative">
-              <auto-carousel :images="item.slidingImages" />
+              <mini-villa-carousel :images="item.slidingImages" />
             </div>
             <div
               class="bg-gray-200 absolute left-0 top-0 right-auto bottom-auto w-5/6 h-60 -z-10"
@@ -146,14 +146,26 @@
         </div>
       </div>
     </div>
-    <widgets-video-modal :activeVideo="activeVideo" :title="modalTitle" />
+    <widgets-video-modal
+      :activeVideo="activeVideo"
+      :title="modalTitle"
+      :show="showModal"
+      :toggleModal="toggleModal"
+    />
   </div>
 </template>
 
 <script>
-import AutoCarousel from "../widgets/AutoCarousel.vue";
+import MiniVillaCarousel from "../widgets/MiniVillaCarousel.vue";
 import { villaData } from "../../data/data.js";
 import VideoModal from "../widgets/VideoModal.vue";
+
+// Modal vars and functions
+const showModal = ref(false);
+// Toggles show modal to the opposite of current vaue
+function toggleModal() {
+  showModal.value = !showModal.value;
+}
 
 // Underline all spaces in a string for HTML compatibility
 function underlineAllSpaces(string) {
@@ -238,10 +250,12 @@ const modalTitle = ref("");
 function setActiveVideoAndTitle(videoUrl, newTitle) {
   activeVideo.value = videoUrl;
   modalTitle.value = newTitle;
+  // Finally, show the modal
+  toggleModal();
 }
 
 export default {
-  components: { AutoCarousel },
+  components: { MiniVillaCarousel },
   //   Setup scroll event listener
   beforeMount() {
     window.addEventListener("scroll", monitorScrollForActiveVilla);
@@ -303,6 +317,8 @@ export default {
       currentActiveVillaSection,
       activeVideo,
       modalTitle,
+      showModal,
+      toggleModal,
       setActiveVideoAndTitle,
     };
   },
