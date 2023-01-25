@@ -17,10 +17,7 @@
           <div
             class="modal-header flex flex-shrink-0 items-center justify-between p-2 bg-blue-300 border-b border-gray-200 rounded-t-md"
           >
-            <h5
-              class="text-xl font-medium leading-normal text-white"
-              id="titleModalScrollableLabel"
-            >
+            <h5 class="text-xl font-medium leading-normal text-white">
               {{ title }}
             </h5>
             <!-- Close button -->

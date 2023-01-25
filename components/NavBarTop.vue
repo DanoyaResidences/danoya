@@ -38,24 +38,33 @@
 
       <!-- Column 3 -->
       <div class="flex-auto w-1/4 flex justify-center">
-        <!-- Only one of 2 elements below will be visible at any given time -->
+        <!-- Only one of 2 elements (book button or icon div) below will be visible at any given time -->
         <a
           href="https://app.mews.com/distributor/3a149bb7-5edc-407c-8f07-ac4d0099998d"
           class="hidden md:block my-auto"
         >
+          <!-- Book now button -->
           <button
             class="hidden md:block border-2 opacity-75 hover:opacity-90 transition-all duration-200 border-gray-200 py-2 px-4 text-white rounded-md h-12 hover:bg-blue-400"
           >
             Book now
           </button>
         </a>
+        <!-- Icon -->
         <div
           class="group flex justify-center md:hidden w-full h-full transition-all duration-300 bg-blue-400 hover:bg-gray-700"
         >
-          <i
-            class="fa fa-calendar-o text-white my-auto group-hover:text-blue-400"
-            aria-hidden="true"
-          ></i>
+          <a
+            href="https://app.mews.com/distributor/3a149bb7-5edc-407c-8f07-ac4d0099998d"
+            class="w-full h-full flex align-middle"
+          >
+            <div class="flex align-middle mx-auto group-hover:text-blue-400">
+              <i
+                class="fa fa-calendar-o text-white my-auto mx-auto"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </a>
         </div>
       </div>
     </div>
