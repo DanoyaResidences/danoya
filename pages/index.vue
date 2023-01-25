@@ -56,7 +56,8 @@ const ourLocationText = {
   text: `<p
           class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider"
         >
-          Danoya Private Luxury Residences offers a luxurious retreat in the bustling neighborhood of Seminyak, Bali. Located just steps away from picturesque beaches and a short drive to popular beach clubs and the Seminyak Shopping Centre. Our villas provide the ideal location for exploring the vibrant entertainment districts of both Seminyak and Canggu, making it the perfect base for your tropical paradise getaway.
+          Danoya Private Luxury Residences offers a luxurious retreat in the bustling neighborhood of Seminyak, Bali. Located just steps away from picturesque beaches and a short drive to popular beach clubs and the Seminyak Shopping Centre.</p> 
+          <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">Our villas provide the ideal location for exploring the vibrant entertainment districts of both Seminyak and Canggu, making it the perfect base for your tropical paradise getaway.
         </p>
         `,
 };
