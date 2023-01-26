@@ -3,7 +3,7 @@
     <div class="flex flex-row flex-wrap my-20 w-10/12 mx-auto">
       <div class="w-full xl:w-4/12 mx-auto">
         <div class="mx-auto">
-          <h2 class="mb-6">{{ content.title }}</h2>
+          <h2 class="mb-6 underline underline-offset-8">{{ content.title }}</h2>
           <!-- Section intro -->
           <div
             class="text-sm leading-7 tracking-widest mb-6"

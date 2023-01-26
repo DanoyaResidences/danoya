@@ -19,16 +19,16 @@ import TextAndGallery from "../components/Sections/TextAndGallery.vue";
 import ImageBetweenText from "../components/Sections/ImageBetweenText.vue";
 
 const topSectionText = {
-  title: "Our History",
+  title: "The Heart of Bali",
   text: `<p
           class="lg:text-base sm:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-wider"
         >
-          Danoya Private Luxury Residences, established in 2003, strives to offer guests an unparalleled experience of leisure and indulgence. We began modestly, with two villa units - one boasting three bedrooms and the other featuring two.
+          Seminyak is a neighborhood located in the heart of Bali, Indonesia. It is known for its high-end resorts, designer boutiques, and world-class restaurants. Visitors can indulge in a wide range of activities, from shopping to dining at some of the best restaurants in the world, and relaxing on the picturesque beaches.
         </p>
         <p
           class="lg:text-base sm:text-sm text-xs line leading-7 md:leading-9 mx-4 tracking-wider"
         >
-         We were determined to grow both in size and in quality, and in 2009 we accomplished this with the construction of seven additional new villa units.
+         Seminyak is also home to a vibrant nightlife scene, from beachside bars and rooftop lounges, to intimate jazz clubs, and high-energy dance clubs, Seminyak offers something for everyone looking to enjoy a night out. Seminyak is the perfect place for those looking for an extravagant and memorable holiday experience in Bali.
         </p>
         `,
   imageSrc: "/images/about/About_top.jpeg",
@@ -36,7 +36,7 @@ const topSectionText = {
 };
 
 const textAndGalleryText = {
-  title: ``,
+  title: `Our Story`,
   gallery: [
     {
       src: "images/about/Slide_1.jpeg",
@@ -52,19 +52,20 @@ const textAndGalleryText = {
     },
   ],
   topText: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
+          Danoya Private Luxury Residences, established in 2003, strives to offer guests an unparalleled experience of leisure and indulgence. We began modestly, with two villa units - one boasting three bedrooms and the other featuring two.
+        </p>
+        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider md:mb-10">
+          We were determined to grow both in size and in quality, and in 2009 we accomplished this with the construction of seven additional new villa units.
+        </p>
+       `,
+  bottomText: `
+  <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
           In 2011, we added 13 new villas to our selection, bringing the total number of units to 20.  These new villas were designed with the same attention to detail and commitment to quality that have made Danoya a trusted choice for vacationers from around the world.  
         </p>
         <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider md:mb-10">
           Today, we are proud to offer a wide range of luxurious and well-appointed villas, each of which is equipped with a range of amenities and features to ensure that you have everything you need for a comfortable and enjoyable stay.
         </p>
        `,
-  bottomText: `
-        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
-          Whether you're looking for a romantic getaway, a family vacation, or a trip with a group of friends, Danoya has a villa that is sure to meet your needs and exceed your expectations.
-        </p>
-        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
-          Come and experience the ultimate in relaxation and luxury at Danoya Private Luxury Residences!
-        </p>`,
   bottomImage: {
     src: "images/spirit/Spirit_1_web.jpeg",
     alt: "Danoya villa entrance with sign",

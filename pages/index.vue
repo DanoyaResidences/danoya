@@ -75,14 +75,19 @@ const textAndGalleryText = {
   ],
   topText: `
         <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
-        Experience the best of the best at our luxurious villa complex, featuring a seamless blend of Mediterranean and tropical design with a nod to traditional Balinese aesthetics.
+        Experience the epitome of luxury and style at our breathtaking villa complex, where the perfect blend of Mediterranean and tropical design seamlessly intertwine with traditional Balinese aesthetics to create a truly one-of-a-kind setting. Our 20 opulent villas boast open floor plans, enclosed lounge areas, fully equipped kitchens, and private pools, providing you with every modern convenience and comfort to ensure your stay is nothing short of extraordinary.
         </p>
-  <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider md:mb-8">
-          Our 20 beautifully designed villas offer open floor plans, enclosed lounge area, fully equipped kitchens, and private pools, providing you with everything you need for a comfortable and enjoyable stay.
+        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider sm:mb-10">
+          With over 15 years of experience and a relentless dedication to excellence, we have cemented our reputation as a trusted and sought-after destination for discerning travelers from around the globe. We take great pride in offering our guests the highest level of convenience and relaxation, making our villa complex the ultimate home away from home.
         </p>
+  
         `,
-  bottomText: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
-          Our wealth of experience of over 15 years and dedication to excellence have made us a trusted choice for vacationers from around the world, and we take pride in offering our guests the highest level of convenience and relaxation at their home away from home.
+  bottomText: `
+        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
+        Relax in the splendor of your own private oasis, each villa is designed and decorated to the highest standard, and our lush gardens and landscaping transport you to a world of serenity and tranquility. With our convenient location and wealth of amenities on site, you'll be spoilt for choice and entertained throughout your stay. And our dedicated concierge team is on hand 24/7 to attend to your every need, ensuring your stay with us is nothing short of extraordinary. 
+        </p>
+        <p class="lg:text-base sm:text-sm text-xs leading-7 mx-auto tracking-wider">
+        Come indulge in the ultimate luxury getaway at our villa complex.
         </p>
         `,
   bottomImage: {
