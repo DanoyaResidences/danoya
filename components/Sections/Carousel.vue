@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h2 class="md:text-center text-3xl mt-20 mb-10">Our Villas</h2>
+    <h2
+      class="text-3xl tracking-wider md:text-left text-center mt-20 mb-10 ml-6 underline"
+    >
+      Our Villas
+    </h2>
     <auto-carousel />
     <!-- Bottom section -->
     <div class="md:w-2/3 w-full mx-auto">

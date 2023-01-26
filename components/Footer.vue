@@ -37,7 +37,7 @@
             class="first:mt-3 last:mb-3 m-2 text-center sm:text-left flex justify-center"
           >
             <NuxtLink
-              class="text-sm hover:underline underline-offset-8"
+              class="text-sm sm:text-base hover:underline underline-offset-8"
               :to="pageLink.link"
             >
               {{ pageLink.title }}

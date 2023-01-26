@@ -2,11 +2,6 @@
   <div>
     <nav-bar-top />
     <nav-bar-bottom />
-    <!-- <TopParallax
-      heading="Home starts here"
-      subHeading="Convenience at your fingertips"
-      imagePath="/images/headers/home_parallax.jpeg"
-    /> -->
     <video-parallax
       heading="Home starts here"
       subHeading="Welcome to Danoya Private Luxury Residences"
