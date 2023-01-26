@@ -18,7 +18,7 @@
         <div class="w-full flex align-middle mt-10">
           <h1
             style="line-height: 70px"
-            class="m-auto sm:mt-56 text-xl md:text-3xl lg:text-4xl text-center text-white font-theme-font md:w-1/2"
+            class="mt-64 mx-auto text-xl md:text-3xl lg:text-4xl text-center text-white font-theme-font md:w-1/2"
           >
             <span
               style="line-height: 30px"

@@ -3,7 +3,7 @@
     <!-- Parallax -->
     <div
       :style="`background-image: url(${imagePath})`"
-      class="w-full h-full bg-no-repeat bg-cover bg-fixed bg-center sm:min-h-[550px]"
+      class="w-full h-full object-cover bg-cover bg-center sm:min-h-[550px]"
     >
       <!-- Picture filter -->
       <div class="w-full h-full bg-gray-700 opacity-70 flex justify-center">
@@ -11,7 +11,7 @@
         <div class="w-full flex align-middle mt-10">
           <h1
             style="line-height: 70px"
-            class="m-auto sm:mt-56 text-xl md:text-3xl lg:text-4xl text-center text-white font-theme-font"
+            class="mt-72 mx-auto text-xl md:text-3xl lg:text-4xl text-center text-white font-theme-font"
           >
             <span
               style="line-height: 30px"
