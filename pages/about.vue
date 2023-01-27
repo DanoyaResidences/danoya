@@ -132,7 +132,8 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Danoya about us and our history.",
+          content:
+            "Danoya Private Luxury Residences, established in 2003, strives to offer guests an unparalleled experience of leisure and indulgence. We began modestly, with two villa units - one boasting three bedrooms and the other featuring two. In 2011, we added 13 new villas to our selection, bringing the total number of units to 20.  These new villas were designed with the same attention to detail and commitment to quality that have made Danoya a trusted choice for vacationers from around the world.",
         },
       ],
     });

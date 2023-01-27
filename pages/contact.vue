@@ -25,7 +25,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Need to contact us?  Please provide us your details to get back to you in relation to your query ",
+            "Need to contact us?  Please provide us your details to get back to you in relation to your query.",
         },
       ],
     });

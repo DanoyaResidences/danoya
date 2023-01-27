@@ -26,7 +26,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Welcome to the home page of Beach Side (by Danoya). A blog dedicated to all that you need to know on the Island of the Gods",
+            "Welcome to the home page of Beach Side (by Danoya). A blog dedicated to all that you need to know about vacationing on the Island of the Gods",
         },
       ],
     });

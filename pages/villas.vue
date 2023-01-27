@@ -49,7 +49,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "At Danoya we have a wide selection of villas fit for every type of guest. Our villas come in two categories: Imperial and Royal",
+            "Escape to paradise and enjoy a relaxing vacation with our fully furnished villas in Bali. At Danoya we have a wide selection of villas fit for every type of guest. Our villas are designed with your comfort in mind, featuring a range of amenities that are sure to make your stay as enjoyable and stress-free as possible.",
         },
       ],
     });
