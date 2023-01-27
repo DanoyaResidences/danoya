@@ -110,7 +110,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Welcome to Danoya Residences, a luxurious private villa complex located in the heart of beautiful Bali. Nestled in the charming village of Batu Belig, our opulent and roomy accommodations provide guests with the ultimate in relaxation and luxury.",
+            "Welcome to Danoya Residences, a luxury private villa complex located in Seminyak on the beautiful island of Bali. Whether for a vacation or honeymoon our opulent and roomy accommodations are perfectly suited, providing guests with the ultimate in relaxation and luxury. Our hotel is nestled on Batu Belig road, the artery connecting the Canggu and Seminyak entertainment hubs.",
         },
       ],
     });
