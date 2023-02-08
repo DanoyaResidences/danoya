@@ -47,10 +47,7 @@
         >
           <h4>{{ currentTeamMember.name }}</h4>
           <p class="mb-6">{{ currentTeamMember.role }}</p>
-          <div
-            class="min-h-[140px] md:min-h-[216px]"
-            v-html="currentTeamMember.text"
-          ></div>
+          <div class="md:min-h-[216px]" v-html="currentTeamMember.text"></div>
           <br />
         </div>
       </div>

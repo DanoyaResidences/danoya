@@ -86,7 +86,7 @@ const ourTeamContent = {
       name: "Calvin Santoso",
       role: "Resident Manager",
       alt: "Profile photo of Calvin Santoso",
-      imageSrc: "/images/spirit/Spirit_2_web.jpeg",
+      imageSrc: "/images/about/staff/Calvin_Santoso.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
           As our Residential Manager, Calvin Santoso is responsible for overseeing a team and ensuring that they provide exceptional customer experiences. He has a strong focus on seamless transitions and works closely with his team to ensure that guests feel welcomed and valued throughout their stay. 
         </p>`,
@@ -95,7 +95,7 @@ const ourTeamContent = {
       name: "Ni Wayan Puryani",
       role: "Accounting Director",
       alt: "Profile photo of Ni Wayan Puryani",
-      imageSrc: "/images/spirit/Spirit_2_web.jpeg",
+      imageSrc: "/images/about/staff/Wayan_Puryani.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
          Wayan Puryani is a highly experienced Accounting Manager with a keen eye for detail and a commitment to accuracy.  She has been a valued member of our team for decades, providing the expertise to ensure the financial stability and success of our business. 
         </p>`,
@@ -104,7 +104,7 @@ const ourTeamContent = {
       name: "Ulan Dewi",
       role: "Front Office",
       alt: "Profile photo of Paramita Ulan Dewi",
-      imageSrc: "/images/spirit/Spirit_2_web.jpeg",
+      imageSrc: "/images/about/staff/Ulan_Dewi.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
          Ulan Dewi is a senior member of our Front Office/Concierge who brings a wealth of experience to our hotel, having been with our business for over 10 years. Ulan's exceptional guest service and warm, welcoming demeanor create positive and unforgettable experiences for guests from the moment they arrive. 
         </p>`,
@@ -113,7 +113,7 @@ const ourTeamContent = {
       name: "Made Wirawan",
       role: "Senior Bellhop / Porter",
       alt: "Profile photo of Made Wirawan",
-      imageSrc: "/images/spirit/Spirit_2_web.jpeg",
+      imageSrc: "/images/about/staff/Made_Wirawan_2.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
          Known for his friendly and professional demeanor, Made Wirawan, goes above and beyond to ensure that our guests feel welcome and comfortable throughout their stay. In addition to assisting with luggage, Made also is a driver for our airport transfer services.
         </p>`,
@@ -122,7 +122,7 @@ const ourTeamContent = {
       name: "Wayan Sudarsana",
       role: "Senior Bellhop / Porter",
       alt: "Profile photo of Wayan Sudarsana",
-      imageSrc: "/images/spirit/Spirit_2_web.jpeg",
+      imageSrc: "/images/about/staff/Wayan_Sudarsana.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
          Wayan Sudarsana is a highly experienced senior security guard who has been a trusted member of our hotel team for over 13 years. With a strong commitment to safety and security, Wayan takes his responsibilities very seriously and works tirelessly to ensure the well-being of our guests, employees, and property.
         </p>`,
@@ -131,7 +131,7 @@ const ourTeamContent = {
       name: "Oka Pramana",
       role: "House Keeping Supervisor",
       alt: "Profile photo of Oka Pramana",
-      imageSrc: "/images/spirit/Spirit_2_web.jpeg",
+      imageSrc: "/images/about/staff/Oka_Pramana.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
           Oka Pramana is a highly experienced Housekeeping Supervisor who has been with our hotel since 2010. With a keen eye for detail and a commitment to cleanliness and order, Oka leads a team of housekeepers to ensure that our guests enjoy comfortable and well-maintained accommodations. 
         </p>`,
