@@ -20,17 +20,8 @@
             :src="currentTeamMember.imageSrc"
             :alt="currentTeamMember.alt"
           />
-        </div>
-        <!-- Team text section -->
-        <div
-          class="w-full sm:w-6/12 mx-auto text-sm leading-7 tracking-widest mt-6"
-        >
-          <h4>{{ currentTeamMember.name }}</h4>
-          <p class="mb-6">{{ currentTeamMember.role }}</p>
-          <div v-html="currentTeamMember.text"></div>
-          <br />
           <!-- Gallery button box -->
-          <div class="absolute bg-gray-200 flex flex-row w-24">
+          <div class="relative right-0 bg-gray-200 flex flex-row w-24">
             <button
               class="hover:bg-gray-400 w-1/4 h-10 transition-all duration-100"
               @click="modifyGalleryCounter(-1)"
@@ -49,6 +40,18 @@
               →
             </button>
           </div>
+        </div>
+        <!-- Team text section -->
+        <div
+          class="w-full sm:w-6/12 mx-auto text-sm leading-7 tracking-widest mt-6"
+        >
+          <h4>{{ currentTeamMember.name }}</h4>
+          <p class="mb-6">{{ currentTeamMember.role }}</p>
+          <div
+            class="min-h-[140px] md:min-h-[216px]"
+            v-html="currentTeamMember.text"
+          ></div>
+          <br />
         </div>
       </div>
     </div>
