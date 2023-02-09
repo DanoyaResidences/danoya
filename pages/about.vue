@@ -113,7 +113,7 @@ const ourTeamContent = {
       name: "Made Wirawan",
       role: "Senior Bellhop / Porter",
       alt: "Profile photo of Made Wirawan",
-      imageSrc: "/images/about/staff/Made_Wirawan_2.jpeg",
+      imageSrc: "/images/about/staff/Made_Wirawan.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
          Known for his friendly and professional demeanor, Made Wirawan, goes above and beyond to ensure that our guests feel welcome and comfortable throughout their stay. In addition to assisting with luggage, Made also is a driver for our airport transfer services.
         </p>`,
