@@ -93,7 +93,7 @@ const ourTeamContent = {
     },
     {
       name: "Ni Wayan Puryani",
-      role: "Accounting Director",
+      role: "Accounting Manager",
       alt: "Profile photo of Ni Wayan Puryani",
       imageSrc: "/images/about/staff/Wayan_Puryani.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
@@ -102,7 +102,7 @@ const ourTeamContent = {
     },
     {
       name: "Ulan Dewi",
-      role: "Front Office",
+      role: "Senior Concierge",
       alt: "Profile photo of Paramita Ulan Dewi",
       imageSrc: "/images/about/staff/Ulan_Dewi.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
@@ -111,7 +111,7 @@ const ourTeamContent = {
     },
     {
       name: "Made Wirawan",
-      role: "Senior Bellhop / Porter",
+      role: "Senior Porter",
       alt: "Profile photo of Made Wirawan",
       imageSrc: "/images/about/staff/Made_Wirawan.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
@@ -120,7 +120,7 @@ const ourTeamContent = {
     },
     {
       name: "Wayan Sudarsana",
-      role: "Senior Bellhop / Porter",
+      role: "Senior Security Guard",
       alt: "Profile photo of Wayan Sudarsana",
       imageSrc: "/images/about/staff/Wayan_Sudarsana.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">
@@ -129,7 +129,7 @@ const ourTeamContent = {
     },
     {
       name: "Oka Pramana",
-      role: "House Keeping Supervisor",
+      role: "House Keeping Manager",
       alt: "Profile photo of Oka Pramana",
       imageSrc: "/images/about/staff/Oka_Pramana.jpeg",
       text: `<p class="lg:text-base sm:text-sm text-xs leading-7 mx-4 tracking-wider">

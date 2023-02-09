@@ -14,7 +14,9 @@
       <!-- Team section -->
       <div class="w-full xl:w-8/12 flex flex-wrap flex-row sm:my-8 mx-auto">
         <!-- Image -->
-        <div class="w-full sm:w-4/12 mx-auto my-auto sm:h-full px-4">
+        <div
+          class="w-full sm:w-4/12 mx-auto my-auto sm:h-full px-2 py-2 border-4 rounded border-solid"
+        >
           <img
             class="object-cover sm:h-full w-full"
             :src="currentTeamMember.imageSrc"
