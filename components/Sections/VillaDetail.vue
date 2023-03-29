@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row mx-auto align-middle w-11/12">
-    <div class="w-1/4 hidden md:block">
+    <div class="w-1/4 hidden lg:block">
       <!-- Villa selection -->
       <div class="sticky top-0 left-0 pt-24">
         <ul class="list-none">
@@ -30,7 +30,7 @@
     </div>
 
     <!-- Villa detail section -->
-    <div class="w-full md:w-3/4">
+    <div class="w-full lg:w-3/4">
       <div
         class="p-4 pt-20"
         v-for="(item, index) in villaDetails()"
