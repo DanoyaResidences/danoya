@@ -1,6 +1,6 @@
 <template>
   <Swiper
-    class="h-full"
+    class="h-full w-full md:w-10/12"
     :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperController]"
     :slides-per-view="1"
     :loop="true"
@@ -20,7 +20,7 @@
     }"
   >
     <SwiperSlide v-for="slide in carouselImages" :key="slide">
-      <img :src="slide.src" class="block w-full" :alt="slide.alt" />
+      <img :src="slide.src" class="block mx-auto" :alt="slide.alt" />
     </SwiperSlide>
   </Swiper>
 </template>
